@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main> :first-child {
+        margin-top: 0 !important;
+      }
+
+      main> :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .font-serif-italic {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#ffffff",
+            "surface": "#ffffff",
+            "surface-container-low": "#fafafa",
+            "surface-container": "#f5f5f5",
+            "surface-container-high": "#ebebeb",
+            "surface-container-highest": "#e0e0e0",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#5f1235",
+            "primary-dark": "#3c0b21",
+            "primary-container": "#7a1744",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#fafafa",
+            "primary-fixed": "#fafafa",
+            "secondary": "#d4af37",
+            "secondary-container": "#fdfbf7",
+            "secondary-fixed": "#fdfbf7",
+            "gold-accent": "#d4af37",
+            "gold-soft": "#fdfbf7",
+            "gold-border": "#e8c564",
+            "on-surface": "#1f1f1f",
+            "on-surface-variant": "#525252",
+            "outline": "#737373",
+            "outline-variant": "#e5e5e5",
+            "mint-soft": "#fdfbf7",
+            "mint-badge": "#d4af37",
+            amber: {
+              700: '#b4841c',
+              600: '#c59b27',
+              500: '#d4af37',
+              400: '#dcb952',
+              300: '#e4c46d',
+              200: '#e8c564',
+              100: '#f0d99a',
+              50: '#fdfbf7',
+            }
+          },
+          fontFamily: {
+            "display": ["EB Garamond", "serif"],
+            "headline": ["EB Garamond", "serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "sans": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-background font-body text-[15px] text-on-surface antialiased selection:bg-primary selection:text-white">
+  <!-- ================================================================= -->
+  <!-- TOP ANNOUNCEMENT BAR & MAIN HEADER                                -->
+  <!-- ================================================================= -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-surface-container shadow-xs">
+    <!-- Slim Luxury Announcement Bar -->
+    <div class="bg-primary text-white text-[12px] py-1.5 px-4 sm:px-8 tracking-wide">
+      <div class="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between gap-y-1">
+        <div class="flex items-center gap-3">
+          <span
+            class="inline-flex items-center gap-1.5 bg-white/15 text-gold-accent px-2.5 py-0.5 rounded-full text-[11px] font-semibold uppercase tracking-wider">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-accent animate-pulse"></span>
+            CHENNAI'S PREMIER FERTILITY CLINIC
+          </span>
+          <span class="hidden md:inline text-white/70">|</span>
+          <span class="hidden md:flex items-center gap-1 text-white/90">
+            <span class="material-symbols-outlined text-[14px] text-gold-accent">verified</span>
+            NABH &amp; ICMR Aligned Standards
+          </span>
+        </div>
+        <div class="flex items-center gap-4 text-white/90 text-[12px]">
+          <a class="flex items-center gap-1 hover:text-gold-accent transition-colors" href="tel:+919342521779">
+            <span class="material-symbols-outlined text-[14px]">call</span>
+            <span>+91 93425 21779</span>
+          </a>
+          <span class="text-white/40">|</span>
+          <a class="flex items-center gap-1 text-gold-accent hover:text-white transition-colors"
+            href="https://wa.me/919342521779" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[14px]">chat</span>
+            <span>WhatsApp Connect</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Main Navigation Bar (Editorial Brand Header) -->
+    <div class="h-20 max-w-[1320px] mx-auto px-4 sm:px-8 flex items-center justify-between gap-6">
+      <a class="flex items-center group shrink-0" href="#">
+        <img src="image.png" alt="ASCAS Logo" class="h-12 w-auto object-contain">
+      </a>
+      <!-- Clean Editorial Nav Links -->
+      <nav
+        class="hidden xl:flex items-center gap-4 2xl:gap-7 text-[14px] font-medium text-on-surface-variant whitespace-nowrap">
+        <a class="text-primary font-semibold border-b-2 border-primary pb-0.5" href="#">Home</a>
+        <a class="hover:text-primary transition-colors" href="#centres">Our Centres</a>
+        <a class="hover:text-primary transition-colors" href="#services">Treatments</a>
+        <a class="hover:text-primary transition-colors" href="#journey">Patient Journey</a>
+        <a class="hover:text-primary transition-colors" href="#specialists">Specialist Doctors</a>
+        <a class="hover:text-primary transition-colors" href="#facilities">Facilities</a>
+        <a class="hover:text-primary transition-colors" href="#gallery">Stories &amp; Videos</a>
+      </nav>
+      <div class="flex items-center gap-3 shrink-0">
+        <a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white text-[13px] font-semibold tracking-wide hover:bg-primary-container shadow-sm hover:shadow-md transition-all border border-gold-border/40 hover:border-gold-accent whitespace-nowrap"
+          href="#book">
+          <span>Book Consultation</span>
+          <span class="material-symbols-outlined text-[16px] text-gold-accent">calendar_today</span>
+        </a>
+        <a class="sm:hidden p-2 rounded-lg text-primary hover:bg-surface-container" href="tel:+919342521779">
+          <span class="material-symbols-outlined text-[24px]">call</span>
+        </a>
+        <button id="mobileMenuBtn"
+          class="xl:hidden p-2 rounded-lg text-primary hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu"
+      class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-surface-container-highest flex-col z-40">
+      <a class="block px-6 py-4 text-[15px] font-medium text-primary border-b border-surface-container"
+        href="#">Home</a>
+      <a class="block px-6 py-4 text-[15px] font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors border-b border-surface-container"
+        href="#centres">Our Centres</a>
+      <a class="block px-6 py-4 text-[15px] font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors border-b border-surface-container"
+        href="#services">Treatments</a>
+      <a class="block px-6 py-4 text-[15px] font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors border-b border-surface-container"
+        href="#journey">Patient Journey</a>
+      <a class="block px-6 py-4 text-[15px] font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors border-b border-surface-container"
+        href="#specialists">Specialist Doctors</a>
+      <a class="block px-6 py-4 text-[15px] font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors border-b border-surface-container"
+        href="#facilities">Facilities</a>
+      <a class="block px-6 py-4 text-[15px] font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors"
+        href="#gallery">Stories &amp; Videos</a>
+      <div class="p-6 bg-surface-container-low">
+        <a class="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full bg-primary text-white text-[14px] font-semibold shadow-sm hover:shadow-md transition-all"
+          href="#book">
+          <span>Book Consultation</span>
+          <span class="material-symbols-outlined text-[18px] text-gold-accent">calendar_today</span>
+        </a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('mobileMenuBtn').addEventListener('click', function () {
+        var menu = document.getElementById('mobileMenu');
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden');
+          menu.classList.add('flex');
+          this.innerHTML = '<span class="material-symbols-outlined text-[26px]">close</span>';
+        } else {
+          menu.classList.add('hidden');
+          menu.classList.remove('flex');
+          this.innerHTML = '<span class="material-symbols-outlined text-[26px]">menu</span>';
+        }
+      });
+    </script>
+  </header>
+  <main class="w-full pt-[116px]">
+    <!-- ================================================================= -->
+    <!-- 1. EDITORIAL HERO SECTION (DEEP MAROON & GOLD)    -->
+    <!-- ================================================================= -->
+    <section class="relative w-full bg-primary text-white overflow-hidden py-16 lg:py-24">
+      <!-- Background image -->
+      <div class="absolute inset-0">
+        <img src="banner.jpg" class="w-full h-full object-cover opacity-25 mix-blend-overlay" alt="Banner Image">
+      </div>
+      <!-- Ambient subtle glow & heritage pattern line -->
+      <div
+        class="absolute inset-0 opacity-10 bg-[radial-gradient(#fedeb2_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none">
+      </div>
+      <div
+        class="absolute -right-32 -bottom-32 w-[520px] h-[520px] rounded-full bg-secondary/15 blur-3xl pointer-events-none">
+      </div>
+      <div class="relative max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          <!-- Left Content Column -->
+          <div class="lg:col-span-7 flex flex-col">
+            <!-- Pill tag -->
+            <div
+              class="inline-flex items-center gap-2 self-start rounded-full bg-white/10 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-accent backdrop-blur-md border border-white/10 mb-6">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-accent"></span>
+              CHENNAI'S PREMIER FERTILITY CENTRE
+            </div>
+            <!-- Serif Display Headline with Italic Accent -->
+            <h1
+              class="font-display text-[44px] sm:text-[56px] lg:text-[64px] font-normal leading-[1.08] tracking-tight text-white">
+              Unlock the Miracle of Life with <span class="font-serif-italic text-gold-accent">Accumed Speciality Clinic
+                and Scans</span>
+            </h1>
+            <p class="mt-6 text-[17px] sm:text-[19px] text-white/80 font-body max-w-xl font-light leading-relaxed">
+              Your Journey to Parenthood starts here
+            </p>
+            <!-- Dual CTAs -->
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-white text-primary font-semibold text-[14px] hover:bg-gold-soft hover:text-primary-dark transition-all shadow-lg shadow-black/20"
+                href="#book">
+                <span>Book Consultation</span>
+                <span class="material-symbols-outlined text-[18px] text-primary">arrow_forward</span>
+              </a>
+              <a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-transparent text-white/90 border border-white/30 font-medium text-[14px] hover:bg-white/10 hover:border-white transition-all"
+                href="#services">
+                <span>Explore Treatments</span>
+                <span class="material-symbols-outlined text-[18px] text-gold-accent">expand_more</span>
+              </a>
+            </div>
+            <!-- Trust micro indicators -->
+            <div
+              class="mt-10 pt-8 border-t border-white/15 flex flex-wrap items-center gap-6 text-[13px] text-white/70">
+              <span class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px] text-gold-accent">verified_user</span>
+                100% Confidential Care
+              </span>
+              <span class="text-white/30">•</span>
+              <span class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px] text-gold-accent">hotel_class</span>
+                AIIMS &amp; JIPMER Trained Specialists
+              </span>
+              <span class="text-white/30">•</span>
+              <span class="flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[18px] text-gold-accent">pin_drop</span>
+                Valasaravakkam &amp; Vadapalani
+              </span>
+            </div>
+          </div>
+          <!-- Right Column: Hero Visual & Fast Consultation Card -->
+          <div class="lg:col-span-5 relative" id="book">
+            <div
+              class="rounded-2xl bg-white text-on-surface p-7 sm:p-8 shadow-2xl border border-gold-border/40 relative">
+              <div class="flex items-start justify-between border-b border-surface-container pb-4 mb-5">
+                <div>
+                  <span class="text-[11px] uppercase tracking-widest font-semibold text-secondary">PRIORITY
+                    ACCESS</span>
+                  <h3 class="font-display text-[26px] font-semibold text-primary leading-tight mt-0.5">Request
+                    Consultation</h3>
+                  <p class="text-[13px] text-on-surface-variant mt-1">Speak directly with Dr. Aishwarya &amp; senior
+                    clinical team.</p>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-mint-soft flex items-center justify-center text-primary shrink-0">
+                  <span class="material-symbols-outlined text-[20px]">calendar_month</span>
+                </div>
+              </div>
+              <form class="space-y-3.5" id="heroBookingForm"
+                onsubmit="event.preventDefault(); document.getElementById('bookingToast').classList.remove('hidden');">
+                <div>
+                  <label class="block text-[12px] font-semibold text-on-surface mb-1">Patient Full Name *</label>
+                  <input
+                    class="w-full rounded-lg bg-surface-container-low border border-surface-container-highest px-3.5 py-2.5 text-[14px] text-on-surface placeholder:text-outline focus:border-primary focus:bg-white focus:outline-none transition-colors"
+                    placeholder="e.g. Priyadharshini Raman" required="" type="text" />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label class="block text-[12px] font-semibold text-on-surface mb-1">Phone Number *</label>
+                    <input
+                      class="w-full rounded-lg bg-surface-container-low border border-surface-container-highest px-3.5 py-2.5 text-[14px] text-on-surface placeholder:text-outline focus:border-primary focus:bg-white focus:outline-none transition-colors"
+                      pattern="[0-9]{10}" placeholder="98765 43210" required="" type="tel" />
+                  </div>
+                  <div>
+                    <label class="block text-[12px] font-semibold text-on-surface mb-1">Email Address *</label>
+                    <input
+                      class="w-full rounded-lg bg-surface-container-low border border-surface-container-highest px-3.5 py-2.5 text-[14px] text-on-surface placeholder:text-outline focus:border-primary focus:bg-white focus:outline-none transition-colors"
+                      placeholder="name@email.com" required="" type="email" />
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-[12px] font-semibold text-on-surface mb-1">Preferred Centre *</label>
+                  <select
+                    class="w-full rounded-lg bg-surface-container-low border border-surface-container-highest px-3.5 py-2.5 text-[13px] text-on-surface focus:border-primary focus:bg-white focus:outline-none transition-colors cursor-pointer">
+                    <option value="valasaravakkam">Valasaravakkam (Arcot Rd) — Mon-Sat 8AM-8PM</option>
+                    <option value="vadapalani">Vadapalani &amp; Saligramam (Near Metro) — Mon-Sat 9AM-8PM</option>
+                    <option value="telehealth">Tele-Fertility Virtual Consultation</option>
+                  </select>
+                </div>
+                <button
+                  class="w-full mt-2 py-3.5 rounded-lg bg-primary text-white font-semibold text-[14px] tracking-wide hover:bg-primary-container active:scale-[0.99] transition-all shadow-md flex items-center justify-center gap-2"
+                  type="submit">
+                  <span>Confirm Priority Consultation</span>
+                  <span class="material-symbols-outlined text-[18px] text-gold-accent">calendar_add_on</span>
+                </button>
+                <div
+                  class="hidden rounded-lg bg-gold-soft border border-gold-border p-3 text-center text-[12px] text-primary font-semibold leading-snug"
+                  id="bookingToast">
+                  ✓ Request confirmed! Our coordinator will call you in 15 minutes to finalize your slot token.
+                </div>
+                <div
+                  class="pt-2 flex items-center justify-between text-[11px] text-on-surface-variant border-t border-surface-container">
+                  <span class="flex items-center gap-1"><span
+                      class="material-symbols-outlined text-[13px] text-gold-accent">lock</span> Strict Privacy</span>
+                  <span>•</span>
+                  <span class="flex items-center gap-1"><span
+                      class="material-symbols-outlined text-[13px] text-gold-accent">bolt</span> Zero Waiting
+                    Option</span>
+                  <span>•</span>
+                  <a class="text-primary font-semibold underline" href="tel:+919342521779">Call Helpline</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Yaal-style Stats Metric Ribbon -->
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8 mt-16">
+        <div class="rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 p-6 sm:p-8">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:divide-x lg:divide-white/15">
+            <div class="flex flex-col items-center text-center px-4">
+              <span class="font-display text-[40px] sm:text-[48px] font-normal leading-none text-white">1,000+</span>
+              <span class="mt-2 text-[12px] font-semibold uppercase tracking-wider text-gold-accent">Happy
+                Families</span>
+              <span class="text-[12px] text-white/70 mt-0.5">Across our centres</span>
+            </div>
+            <div class="flex flex-col items-center text-center px-4">
+              <span class="font-display text-[40px] sm:text-[48px] font-normal leading-none text-white">5,000+</span>
+              <span class="mt-2 text-[12px] font-semibold uppercase tracking-wider text-gold-accent">Surgeries</span>
+              <span class="text-[12px] text-white/70 mt-0.5">Advanced protocols</span>
+            </div>
+            <div class="flex flex-col items-center text-center px-4">
+              <span class="font-display text-[40px] sm:text-[48px] font-normal leading-none text-white">2,000+</span>
+              <span class="mt-2 text-[12px] font-semibold uppercase tracking-wider text-gold-accent">IVF Cycles</span>
+              <span class="text-[12px] text-white/70 mt-0.5">High success rates</span>
+            </div>
+            <div class="flex flex-col items-center text-center px-4">
+              <span class="font-display text-[40px] sm:text-[48px] font-normal leading-none text-white">1,000+</span>
+              <span class="mt-2 text-[12px] font-semibold uppercase tracking-wider text-gold-accent">IUI Cycles</span>
+              <span class="text-[12px] text-white/70 mt-0.5">Precision fertility care</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 2. YAAL-STYLE CLINIC CENTRES SHOWCASE                             -->
+    <!-- ================================================================= -->
+    <section class="w-full py-20 bg-surface-container-low" id="centres">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <h2 class="font-display text-[36px] sm:text-[44px] text-primary mt-2 flex items-center justify-center gap-3">
+            <span class="material-symbols-outlined text-gold-accent">verified</span>
+            Why Choose <span class="font-serif-italic text-secondary">ASCAS?</span>
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Feature 1 -->
+          <div class="bg-white p-6 rounded-2xl border border-surface-container shadow-sm flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-[32px] mt-1">favorite</span>
+            <div>
+              <h3 class="font-semibold text-primary text-[16px]">100% IVF Focus</h3>
+              <p class="text-[13px] text-on-surface-variant mt-2 leading-relaxed">Dedicated exclusively to fertility
+                treatments, ensuring focused and highly specialized care for your journey.</p>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="bg-white p-6 rounded-2xl border border-surface-container shadow-sm flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-[32px] mt-1">biotech</span>
+            <div>
+              <h3 class="font-semibold text-primary text-[16px]">State-of-the-art lab</h3>
+              <p class="text-[13px] text-on-surface-variant mt-2 leading-relaxed">Equipped with the latest technology
+                and adhering to global standards for optimal embryo development.</p>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="bg-white p-6 rounded-2xl border border-surface-container shadow-sm flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-[32px] mt-1">diversity_1</span>
+            <div>
+              <h3 class="font-semibold text-primary text-[16px]">Experienced Team</h3>
+              <p class="text-[13px] text-on-surface-variant mt-2 leading-relaxed">Led by highly qualified specialists
+                with extensive training from premier institutes like AIIMS &amp; JIPMER.</p>
+            </div>
+          </div>
+          <!-- Feature 4 -->
+          <div class="bg-white p-6 rounded-2xl border border-surface-container shadow-sm flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary text-[32px] mt-1">support_agent</span>
+            <div>
+              <h3 class="font-semibold text-primary text-[16px]">24/7 support</h3>
+              <p class="text-[13px] text-on-surface-variant mt-2 leading-relaxed">Round-the-clock assistance and
+                guidance throughout your entire fertility treatment process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 3. YAAL-STYLE NUMBERED TREATMENTS & SERVICES SECTION             -->
+    <!-- ================================================================= -->
+    <section class="w-full py-24 bg-white" id="services">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="font-display text-[36px] sm:text-[46px] text-primary mt-2 leading-tight">
+            Our <span class="font-serif-italic text-secondary">Services</span>
+          </h2>
+        </div>
+        <!-- 6 Numbered Elegant Cards (Signature Yaal Style) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Treatment 01 -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-surface-container-low p-8 border border-surface-container-highest transition-all duration-300 hover:shadow-lg hover:border-gold-border/80 flex flex-col justify-between">
+            <span
+              class="absolute top-4 right-6 font-display text-[72px] font-normal text-surface-container-highest/60 select-none pointer-events-none">01</span>
+            <div class="relative z-10">
+              <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-secondary mb-2">PRIMARY
+                PROTOCOL</span>
+              <h3 class="font-display text-[26px] text-primary font-medium">IVF / ICSI Treatment</h3>
+              <p class="mt-3 text-[14px] text-on-surface-variant leading-relaxed">
+                In-Vitro Fertilisation &amp; Intracytoplasmic Sperm Injection with advanced blastocyst culturing, Laser
+                Assisted Hatching (LAH), and individualized stimulation protocols tailored to ovarian reserve.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container relative z-10 flex items-center justify-between">
+              <a class="text-[13px] font-semibold text-primary flex items-center gap-1.5 hover:text-secondary group"
+                href="#book">
+                <span>Book Protocol Consult</span>
+                <span
+                  class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-[11px] text-secondary font-medium">High Success</span>
+            </div>
+          </div>
+          <!-- Treatment 02 -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-surface-container-low p-8 border border-surface-container-highest transition-all duration-300 hover:shadow-lg hover:border-gold-border/80 flex flex-col justify-between">
+            <span
+              class="absolute top-4 right-6 font-display text-[72px] font-normal text-surface-container-highest/60 select-none pointer-events-none">02</span>
+            <div class="relative z-10">
+              <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-secondary mb-2">FIRST-LINE
+                CARE</span>
+              <h3 class="font-display text-[26px] text-primary font-medium">IUI (Intrauterine Insemination)</h3>
+              <p class="mt-3 text-[14px] text-on-surface-variant leading-relaxed">
+                Gentle, minimally invasive timing-guided conception using premium double-density gradient sperm
+                preparation in a dedicated Class 10,000 sterile IUI suite.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container relative z-10 flex items-center justify-between">
+              <a class="text-[13px] font-semibold text-primary flex items-center gap-1.5 hover:text-secondary group"
+                href="#book">
+                <span>Schedule Cycle</span>
+                <span
+                  class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-[11px] text-secondary font-medium">Natural Timing</span>
+            </div>
+          </div>
+          <!-- Treatment 03 -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-surface-container-low p-8 border border-surface-container-highest transition-all duration-300 hover:shadow-lg hover:border-gold-border/80 flex flex-col justify-between">
+            <span
+              class="absolute top-4 right-6 font-display text-[72px] font-normal text-surface-container-highest/60 select-none pointer-events-none">03</span>
+            <div class="relative z-10">
+              <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-secondary mb-2">LONG-TERM
+                OPTIONS</span>
+              <h3 class="font-display text-[26px] text-primary font-medium">Fertility Preservation</h3>
+              <p class="mt-3 text-[14px] text-on-surface-variant leading-relaxed">
+                Oocyte cryopreservation (egg freezing) for career or onco-fertility planning with rapid vitrification,
+                paired with uterine cavity enhancement surgeries.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container relative z-10 flex items-center justify-between">
+              <a class="text-[13px] font-semibold text-primary flex items-center gap-1.5 hover:text-secondary group"
+                href="#book">
+                <span>Learn About Freezing</span>
+                <span
+                  class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-[11px] text-secondary font-medium">Vitrification</span>
+            </div>
+          </div>
+          <!-- Treatment 04 -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-surface-container-low p-8 border border-surface-container-highest transition-all duration-300 hover:shadow-lg hover:border-gold-border/80 flex flex-col justify-between">
+            <span
+              class="absolute top-4 right-6 font-display text-[72px] font-normal text-surface-container-highest/60 select-none pointer-events-none">04</span>
+            <div class="relative z-10">
+              <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-secondary mb-2">SURGICAL
+                PRECISION</span>
+              <h3 class="font-display text-[26px] text-primary font-medium">Laparoscopic Surgeries</h3>
+              <p class="mt-3 text-[14px] text-on-surface-variant leading-relaxed">
+                Minimally invasive keyhole surgery for severe endometriosis, ovarian cysts, tubal block removal, and
+                transabdominal laparoscopic cerclage (TAC).
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container relative z-10 flex items-center justify-between">
+              <a class="text-[13px] font-semibold text-primary flex items-center gap-1.5 hover:text-secondary group"
+                href="#book">
+                <span>Consult Surgical Team</span>
+                <span
+                  class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-[11px] text-secondary font-medium">2,000+ Completed</span>
+            </div>
+          </div>
+          <!-- Treatment 05 -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-surface-container-low p-8 border border-surface-container-highest transition-all duration-300 hover:shadow-lg hover:border-gold-border/80 flex flex-col justify-between">
+            <span
+              class="absolute top-4 right-6 font-display text-[72px] font-normal text-surface-container-highest/60 select-none pointer-events-none">05</span>
+            <div class="relative z-10">
+              <span
+                class="inline-block text-[11px] font-bold uppercase tracking-wider text-secondary mb-2">COMPREHENSIVE
+                TESTING</span>
+              <h3 class="font-display text-[26px] text-primary font-medium">Male &amp; Female Infertility Workup</h3>
+              <p class="mt-3 text-[14px] text-on-surface-variant leading-relaxed">
+                Computerized semen morphology, DNA fragmentation index (DFI), anti-Müllerian hormone (AMH) profiling,
+                and high-precision tubal patency evaluation.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container relative z-10 flex items-center justify-between">
+              <a class="text-[13px] font-semibold text-primary flex items-center gap-1.5 hover:text-secondary group"
+                href="#book">
+                <span>Book Joint Workup</span>
+                <span
+                  class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-[11px] text-secondary font-medium">Couple Screening</span>
+            </div>
+          </div>
+          <!-- Treatment 06 -->
+          <div
+            class="relative overflow-hidden rounded-2xl bg-surface-container-low p-8 border border-surface-container-highest transition-all duration-300 hover:shadow-lg hover:border-gold-border/80 flex flex-col justify-between">
+            <span
+              class="absolute top-4 right-6 font-display text-[72px] font-normal text-surface-container-highest/60 select-none pointer-events-none">06</span>
+            <div class="relative z-10">
+              <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-secondary mb-2">ENDOCRINE
+                &amp; UTERINE HEALTH</span>
+              <h3 class="font-display text-[26px] text-primary font-medium">PCOS &amp; Fibroid Management</h3>
+              <p class="mt-3 text-[14px] text-on-surface-variant leading-relaxed">
+                Personalized endocrinology regimens, lifestyle guidance, and minimally invasive uterine-sparing
+                myomectomy protocols to restore regular ovulatory cycles.
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container relative z-10 flex items-center justify-between">
+              <a class="text-[13px] font-semibold text-primary flex items-center gap-1.5 hover:text-secondary group"
+                href="#book">
+                <span>Explore PCOS Regimen</span>
+                <span
+                  class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-[11px] text-secondary font-medium">Holistic Oversight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 4. YAAL-STYLE 6-STEP PATIENT JOURNEY                              -->
+    <!-- ================================================================= -->
+    <section class="w-full py-20 bg-surface-container-low border-y border-surface-container-high" id="journey">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-[11px] font-bold tracking-[0.2em] uppercase text-secondary">6-STEP CARE ROADMAP</span>
+          <h2 class="font-display text-[36px] sm:text-[44px] text-primary mt-2">
+            Your <span class="font-serif-italic text-secondary">Fertility Journey</span>, Step by Step
+          </h2>
+          <p class="mt-2 text-[15px] text-on-surface-variant font-light">
+            Understanding what happens at each stage relieves uncertainty. Here is our structured pathway from
+            consultation to parenthood.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Step 1 -->
+          <div class="rounded-xl bg-white p-6 border border-surface-container-high shadow-xs">
+            <div
+              class="w-9 h-9 rounded-lg bg-mint-soft text-primary font-display font-semibold flex items-center justify-center text-[15px] mb-4">
+              01
+            </div>
+            <h4 class="font-display text-[20px] text-primary font-medium">Initial Consultation &amp; Assessment</h4>
+            <p class="mt-2 text-[13px] text-on-surface-variant leading-relaxed">
+              Comprehensive fertility evaluation including hormonal tests, ultrasound scan analysis, and joint medical
+              history review. Dr. Aishwarya personally designs your plan.
+            </p>
+          </div>
+          <!-- Step 2 -->
+          <div class="rounded-xl bg-white p-6 border border-surface-container-high shadow-xs">
+            <div
+              class="w-9 h-9 rounded-lg bg-mint-soft text-primary font-display font-semibold flex items-center justify-center text-[15px] mb-4">
+              02
+            </div>
+            <h4 class="font-display text-[20px] text-primary font-medium">Ovarian Stimulation &amp; Monitoring</h4>
+            <p class="mt-2 text-[13px] text-on-surface-variant leading-relaxed">
+              Controlled medication protocol to stimulate your ovaries to produce multiple eggs. Regular 4D ultrasound
+              and blood hormone monitoring track precise follicle growth.
+            </p>
+          </div>
+          <!-- Step 3 -->
+          <div class="rounded-xl bg-white p-6 border border-surface-container-high shadow-xs">
+            <div
+              class="w-9 h-9 rounded-lg bg-mint-soft text-primary font-display font-semibold flex items-center justify-center text-[15px] mb-4">
+              03
+            </div>
+            <h4 class="font-display text-[20px] text-primary font-medium">Gentle Egg Retrieval</h4>
+            <p class="mt-2 text-[13px] text-on-surface-variant leading-relaxed">
+              A minimally invasive ultrasound-guided procedure performed under light sedation. Safe, comfortable, and
+              takes approximately 15–20 minutes with swift recovery.
+            </p>
+          </div>
+          <!-- Step 4 -->
+          <div class="rounded-xl bg-white p-6 border border-surface-container-high shadow-xs">
+            <div
+              class="w-9 h-9 rounded-lg bg-mint-soft text-primary font-display font-semibold flex items-center justify-center text-[15px] mb-4">
+              04
+            </div>
+            <h4 class="font-display text-[20px] text-primary font-medium">Fertilisation &amp; Embryo Culture</h4>
+            <p class="mt-2 text-[13px] text-on-surface-variant leading-relaxed">
+              Eggs are fertilized with healthy sperm in our Class 10,000 embryology cleanroom. Embryos are nurtured to
+              Day 5 blastocyst stage under strict climate control.
+            </p>
+          </div>
+          <!-- Step 5 -->
+          <div class="rounded-xl bg-white p-6 border border-surface-container-high shadow-xs">
+            <div
+              class="w-9 h-9 rounded-lg bg-mint-soft text-primary font-display font-semibold flex items-center justify-center text-[15px] mb-4">
+              05
+            </div>
+            <h4 class="font-display text-[20px] text-primary font-medium">Embryo Transfer</h4>
+            <p class="mt-2 text-[13px] text-on-surface-variant leading-relaxed">
+              The highest-quality embryo is gently placed into the uterus in a painless procedure. Surplus viable
+              embryos are vitrified for future family planning.
+            </p>
+          </div>
+          <!-- Step 6 -->
+          <div class="rounded-xl bg-white p-6 border border-surface-container-high shadow-xs">
+            <div
+              class="w-9 h-9 rounded-lg bg-mint-soft text-primary font-display font-semibold flex items-center justify-center text-[15px] mb-4">
+              06
+            </div>
+            <h4 class="font-display text-[20px] text-primary font-medium">Pregnancy Test &amp; Follow Up</h4>
+            <p class="mt-2 text-[13px] text-on-surface-variant leading-relaxed">
+              A blood beta-hCG test confirms pregnancy 14 days after transfer. Our dedicated medical team provides
+              continuous first-trimester monitoring and supportive care.
+            </p>
+          </div>
+        </div>
+        <!-- Banner inside Journey -->
+        <div
+          class="mt-10 rounded-xl bg-primary text-white p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <p class="font-display text-[20px] text-gold-accent">Every treatment plan is personally directed by Dr.
+              Aishwarya Parthasarathy.</p>
+            <p class="text-[13px] text-white/80 mt-0.5">No junior proxies — you meet the lead specialist at every
+              pivotal milestone.</p>
+          </div>
+          <a class="px-6 py-2.5 rounded-full bg-white text-primary text-[13px] font-semibold tracking-wide hover:bg-gold-soft transition-colors shrink-0"
+            href="#book">
+            Book Consultation Today
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 5. YAAL-STYLE DOCTOR SPOTLIGHT HERO (DR. AISHWARYA & FACULTY)    -->
+    <!-- ================================================================= -->
+    <section class="w-full py-24 bg-white" id="specialists">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <h2 class="font-display text-[36px] sm:text-[44px] text-primary mt-2">
+            Meet Our Team of <span class="font-serif-italic text-secondary">Experts</span>
+          </h2>
+        </div>
+        <!-- Chief Doctor Feature: Dr. Aishwarya Parthasarathy (Matches Yaal Doctor Feature) -->
+        <div
+          class="rounded-3xl bg-surface-container-low border border-surface-container-high p-8 sm:p-12 lg:p-16 mb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div class="lg:col-span-7">
+              <div
+                class="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-secondary border border-surface-container-high mb-4">
+                <span class="material-symbols-outlined text-[16px] text-gold-accent">verified</span>
+                MEET YOUR CHIEF FERTILITY SPECIALIST
+              </div>
+              <h2 class="font-display text-[38px] sm:text-[48px] text-primary font-medium leading-tight">
+                Dr. Aishwarya <span class="font-serif-italic text-secondary">Parthasarathy</span>
+              </h2>
+              <p class="text-[15px] font-semibold text-primary/80 mt-1">
+                MBBS, DGO, DNB, MRCOG (UK)
+              </p>
+              <p class="text-[12px] uppercase tracking-wider text-secondary font-bold mt-0.5">
+                Director &amp; Chief Fertility Specialist
+              </p>
+              <p class="mt-5 text-[15px] text-on-surface-variant leading-relaxed font-light">
+                Dr. Aishwarya Parthasarathy is an acclaimed Gynecologist, Fertility Specialist, and IVF Expert with a
+                distinguished track record of guiding couples to parenthood.
+              </p>
+              <!-- Credentials List -->
+              <div class="mt-6 space-y-2 text-[13px] text-on-surface">
+                <div class="flex items-start gap-2.5">
+                  <span
+                    class="material-symbols-outlined text-[16px] text-gold-accent shrink-0 mt-0.5">check_circle</span>
+                  <span>Fellowship in Reproductive Medicine (AIIMS)</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span
+                    class="material-symbols-outlined text-[16px] text-gold-accent shrink-0 mt-0.5">check_circle</span>
+                  <span>Fellowship in Fetal Medicine (JIPMER)</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span
+                    class="material-symbols-outlined text-[16px] text-gold-accent shrink-0 mt-0.5">check_circle</span>
+                  <span>MRCOG (UK)</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span
+                    class="material-symbols-outlined text-[16px] text-gold-accent shrink-0 mt-0.5">check_circle</span>
+                  <span>Expert in Complex IVF &amp; High Risk Pregnancy</span>
+                </div>
+              </div>
+              <!-- Mini metrics -->
+              <div class="mt-8 pt-6 border-t border-surface-container flex flex-wrap items-center gap-8">
+                <div>
+                  <span class="font-display text-[32px] text-primary font-semibold">98.4%</span>
+                  <p class="text-[11px] font-semibold text-secondary uppercase tracking-wider">Satisfaction</p>
+                </div>
+                <div class="h-8 w-px bg-surface-container-highest"></div>
+                <div>
+                  <span class="font-display text-[32px] text-primary font-semibold">1,000+</span>
+                  <p class="text-[11px] font-semibold text-secondary uppercase tracking-wider">IVF Cycles</p>
+                </div>
+                <div class="h-8 w-px bg-surface-container-highest"></div>
+                <div>
+                  <span class="font-display text-[32px] text-primary font-semibold">15+</span>
+                  <p class="text-[11px] font-semibold text-secondary uppercase tracking-wider">Years Experience</p>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-white text-[13px] font-semibold hover:bg-primary-container transition-colors shadow-sm"
+                  href="#book">
+                  <span>Schedule with Dr. Aishwarya</span>
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <!-- Doctor Photo Frame (Yaal Oval/Clean Aesthetic) -->
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="relative w-full max-w-sm">
+                <div
+                  class="overflow-hidden rounded-3xl bg-surface-container shadow-xl border-4 border-white aspect-[4/5]">
+                  <img alt="Dr. Aishwarya Parthasarathy" class="w-full h-full object-cover object-top"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcwed--yZ_mTPAOoMq5VbOJo3uE2t3hLlw8UXKJmtm1n9QuV0ScdJGNPH9lj_zRgujoIyx9RX4rqJ6rrLriQsbTDw5tocbbtF-5osRukGOS2suLhLS-3zjVcDb74pTQhb-RI-OTYNiczLGtLxEmI20fUOGDQu8y2I2-y8j_Y1xgwZCcB7HDQj7Ol3vo8W_ax2nemstTggrMR_dU-EY03KjBP0-xbpPiKBtt67S46_5e0q6hLq3GC7p" />
+                </div>
+                <div
+                  class="absolute -bottom-4 right-4 rounded-xl bg-white p-3.5 shadow-lg border border-gold-border/60">
+                  <div class="flex items-center gap-2 text-primary font-semibold text-[13px]">
+                    <span class="material-symbols-outlined text-gold-accent text-[20px]">stars</span>
+                    <span>Direct Doctor Care</span>
+                  </div>
+                  <p class="text-[11px] text-on-surface-variant">At both Chennai clinics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Additional Senior Faculty Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Doctor 2: Dr. Ashwin Muralidharan -->
+          <div
+            class="rounded-2xl bg-surface-container-low p-7 border border-surface-container-high flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-primary">
+                  <img alt="Dr. Balakrishnan" class="w-full h-full object-cover object-top"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuABS7RR6wQO283NVlrpboclF4Y8XQUcMCMndtQam-aL8bDDEKVjhe55iuFTauH-6k50O7n3LqyW4iOZXVvDGF9ZHq-SzGh_u-oPtLapYmaPkoDKA06hPrD5i6zmK6QKllDwvoT0iJxu0H2Kc5QZL6OuMOQfWeqWotGr8aU270-qf0e3ISJCVRFojbkhD4BBpwLv5BEYbVvRf6SR1jxF1cDJ3sKvR15ceBDKddljRaXiqyrPRASyk2N9" />
+                </div>
+                <div>
+                  <span class="text-[11px] font-bold text-secondary uppercase tracking-wider">NEONATOLOGY LEAD</span>
+                  <h3 class="font-display text-[24px] text-primary font-medium">Dr. Balakrishnan</h3>
+                  <p class="text-[13px] text-primary/80 font-medium">MBBS, MD (Paed), DM (Neonatology)</p>
+                  <p class="text-[11px] text-on-surface-variant">Consultant Neonatologist &amp; Pediatrician</p>
+                </div>
+              </div>
+              <p class="text-[13px] text-on-surface-variant leading-relaxed">
+                Expert in neonatal care, ensuring the best start for your miracle baby. Specializes in intensive care
+                for premature infants and pediatric wellness.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-surface-container flex items-center justify-between">
+              <span class="text-[12px] text-secondary font-medium">3D/4D USG Specialist</span>
+              <a class="text-[13px] font-semibold text-primary hover:underline" href="#book">Book Scan Evaluation →</a>
+            </div>
+          </div>
+          <!-- Doctor 3: Dr. M. Ashok Kumar -->
+          <div
+            class="rounded-2xl bg-surface-container-low p-7 border border-surface-container-high flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-primary">
+                  <img alt="Dr. M. Ashok Kumar" class="w-full h-full object-cover object-top"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Rkf8VCTNwSsLlODzsC9kyzO1ynylhwQtzbIvNhhQ5hJigF3yMRyMLnK2ZQN9O6tYghCL96nLBavfyLThEr84gs46xw4VET_Y87-I8oxjM6ZS7uV-9aKgRXI74HjwQia8HoKX-mAMJYyOWzp1ufCxrNRa3nEYfI-1zuhHvitjJF9L9KuT77HgUmDtoDNa7wZe2QHLluZCk2yoZX_A5bAp5Gmufgi7aNKAsYzq22rOPlNgecGGWBYz" />
+                </div>
+                <div>
+                  <span class="text-[11px] font-bold text-secondary uppercase tracking-wider">SURGICAL LEAD</span>
+                  <h3 class="font-display text-[24px] text-primary font-medium">Dr. M. Ashok kumar</h3>
+                  <p class="text-[13px] text-primary/80 font-medium">Consultant Surgical Gastroenterologist</p>
+                  <p class="text-[11px] text-on-surface-variant">Laparoscopic &amp; Pelvic Surgery Pioneer</p>
+                </div>
+              </div>
+              <p class="text-[13px] text-on-surface-variant leading-relaxed">
+                Pioneer in minimally invasive laparoscopic surgery with extensive surgical track record. Specializes in
+                complex abdominal &amp; pelvic laparoscopy, hernia, gallstones, and advanced surgical interventions with
+                compassionate patient care.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-surface-container flex items-center justify-between">
+              <span class="text-[12px] text-secondary font-medium">Minimally Invasive Surgery</span>
+              <a class="text-[13px] font-semibold text-primary hover:underline" href="#book">Book Surgical Evaluation
+                →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 6. YAAL-STYLE VIDEO GALLERY SECTION                               -->
+    <!-- ================================================================= -->
+    <section class="w-full py-20 bg-surface-container-low" id="video-gallery">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-[11px] font-bold tracking-[0.2em] uppercase text-secondary">CLINICAL EDUCATION &amp;
+            MEDIA</span>
+          <h2 class="font-display text-[36px] sm:text-[44px] text-primary mt-2">
+            Video <span class="font-serif-italic text-secondary">Gallery</span>
+          </h2>
+          <p class="mt-2 text-[15px] text-on-surface-variant font-light">
+            Watch Dr. Aishwarya Parthasarathy explain natural conception methods, surgical breakthroughs, and Low AMH
+            fertility guidance.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Video 1 -->
+          <div
+            class="group rounded-2xl bg-white overflow-hidden border border-surface-container-high shadow-xs hover:shadow-lg transition-all">
+            <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+              <img alt="Miracle Baby Success Story"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuArMm06_sG0tmamN8mZ49XDhjxdUlJxFWghAeh146VAPDqw0IFBiYo9jvGGciL5k32KhRF1Hbu05dwDy_cc_ecOt_xX8-ABp0eaCW2bB3YBEF1vGKyixyNEmWp_aQR9KBNaS2ENPhx-9sPIhKfPcIG3IE5s60lEkfDMKLbqSE_rCvdS5ygIOv3Ld6UYhyP_ktnNu4QYXmgzlGkXlzxMwYaYrf9fRbhvHouWeak9aZpnbuLneH2rljwE" />
+              <div
+                class="absolute inset-0 bg-black/25 flex items-center justify-center group-hover:bg-black/35 transition-colors">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[24px]">play_arrow</span>
+                </div>
+              </div>
+              <span
+                class="absolute bottom-2.5 right-3 bg-black/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">12:45</span>
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-secondary">NATURAL CONCEPTION</span>
+              <h4 class="font-display text-[19px] text-primary font-medium mt-1 leading-snug">
+                உடலுறவு இடமாறு பிறகு Miracle Baby!
+              </h4>
+              <p class="mt-2 text-[13px] text-on-surface-variant line-clamp-2">
+                Inspiring story of overcoming recurrent tubal difficulties and welcoming a natural miracle baby with
+                tailored clinical guidance.
+              </p>
+              <div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between text-[12px]">
+                <span class="text-on-surface-variant">Patient Testimonial</span>
+                <span class="font-semibold text-primary">Watch Story →</span>
+              </div>
+            </div>
+          </div>
+          <!-- Video 2 -->
+          <div
+            class="group rounded-2xl bg-white overflow-hidden border border-surface-container-high shadow-xs hover:shadow-lg transition-all">
+            <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+              <img alt="Transabdominal Laparoscopic Cerclage (TAC)"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYIt85Un9Hk92JeC7_68q8F6JlTuCkOkCMAguWsVSeOaqD1my_MEub2-SuzpCwuNBymNqb33ujNdbQwg303PkRt5AV0OEIw_86vTs6Wy7Nsy9GbvlQNmC0ZVzKrCmNbJEZZDMTcMeXqNHP8C3QV1wDcHG9En4fN1gdvBJTCAqRpTfgc84edY22AKCmzpXAHDhXOZ7ssYKXyvzOG-hZHgAfmd_4h_ep23cQBYRw_zrvsMeUwACaCy9f" />
+              <div
+                class="absolute inset-0 bg-black/25 flex items-center justify-center group-hover:bg-black/35 transition-colors">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[24px]">play_arrow</span>
+                </div>
+              </div>
+              <span
+                class="absolute bottom-2.5 right-3 bg-black/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">18:20</span>
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-secondary">SURGICAL INNOVATION</span>
+              <h4 class="font-display text-[19px] text-primary font-medium mt-1 leading-snug">
+                Transabdominal Laparoscopic Cerclage (TAC) Explained
+              </h4>
+              <p class="mt-2 text-[13px] text-on-surface-variant line-clamp-2">
+                Detailed surgical walkthrough on how minimally invasive laparoscopic stitch protects against
+                second-trimester miscarriages.
+              </p>
+              <div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between text-[12px]">
+                <span class="text-on-surface-variant">Surgical Masterclass</span>
+                <span class="font-semibold text-primary">Watch Lecture →</span>
+              </div>
+            </div>
+          </div>
+          <!-- Video 3 -->
+          <div
+            class="group rounded-2xl bg-white overflow-hidden border border-surface-container-high shadow-xs hover:shadow-lg transition-all">
+            <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+              <img alt="Low AMH &amp; Natural Conception"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQEBGu2TSGfxfGbOUN7NnrL1FNW5IwYyJUjPuXOVZm-BZ7MIKUHfngTmH3vU4uWjwQpqmgLD2krV3OUISekSJ_tNtUVt3Y1HjrJeUMKFA7cXK7BTOtOvQ7-BwvKiFnXvQZ7Yy794FhsU4Ah9MSf7MCBOid0QadBYO9sBmLGjcheSFT0GouSigzCt_VFMUmfTEf6FlucSisf3wx6aVYLE1rLt9EmFmEpbH5EkCDnplNIhEJq_emYOM2" />
+              <div
+                class="absolute inset-0 bg-black/25 flex items-center justify-center group-hover:bg-black/35 transition-colors">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-[24px]">play_arrow</span>
+                </div>
+              </div>
+              <span
+                class="absolute bottom-2.5 right-3 bg-black/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">15:08</span>
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-secondary">OVARIAN RESERVE
+                GUIDANCE</span>
+              <h4 class="font-display text-[19px] text-primary font-medium mt-1 leading-snug">
+                AMH குறைவாக இருந்தாலும், Can I Get Pregnant Naturally?
+              </h4>
+              <p class="mt-2 text-[13px] text-on-surface-variant line-clamp-2">
+                Busting myths around Anti-Müllerian Hormone (AMH) tests, egg quality vs count, and realistic timelines
+                for healthy pregnancy.
+              </p>
+              <div class="mt-4 pt-3 border-t border-surface-container flex items-center justify-between text-[12px]">
+                <span class="text-on-surface-variant">Doctor Insights</span>
+                <span class="font-semibold text-primary">Watch Guide →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 7. YAAL-STYLE LABS & CLINIC THEATRES THEMSELVES (FACILITIES)     -->
+    <!-- ================================================================= -->
+    <section class="w-full py-24 bg-white" id="facilities">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-[11px] font-bold tracking-[0.2em] uppercase text-secondary">INSIDE OUR CENTRES</span>
+          <h2 class="font-display text-[36px] sm:text-[46px] text-primary mt-2">
+            Clinic <span class="font-serif-italic text-secondary">Facilities</span>
+          </h2>
+          <p class="mt-3 text-[15px] text-on-surface-variant font-light">
+            No stock photography. Built according to cleanroom specifications and international embryology standards.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div
+            class="rounded-xl overflow-hidden bg-surface-container border border-surface-container-high group relative">
+            <img alt="Our IUI Lab"
+              class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa9awHjx6q3qNe6gjFHH1RcyCMmH8aEA51FTLUqWAwGDpO7yZT4IOGEOEJYpVaI_8dm58sGlkKdr4Gg68tVrM480oM4zggKeQfwjfT2bZfZAcu2YkZbODMWJZ0lJcVy5UUCHvsAXCopjNCLaTFTbLS8oWc2BlgGcqEC--SY49KkyZXJk2Sx6tYd-cwchlOHNimBMY02lks5Yddv1dexL0R93r8GQ9TZ8oCYCrFDNae8_9GR-hDocHd" />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-3 text-white">
+              <p class="text-[13px] font-semibold">IUI &amp; Andrology Lab</p>
+              <p class="text-[10px] text-white/80">Class 10,000 Airflow</p>
+            </div>
+          </div>
+          <div
+            class="rounded-xl overflow-hidden bg-surface-container border border-surface-container-high group relative">
+            <img alt="Our Scan Suite"
+              class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVDs68UoIukZvFWXOFdE6DaBnTlC4mfkG0Y7PsUVmKQa63EXOsBYVem2nF-Q1JhkATgWjVJnBqx-DtfDZJtvLHBqBwRfVqAxFHxHliOZKhfFUiEqUgZFw3pjwYf-JG0Wwm9aYf-C32KUhPGFyXiGkLQ0q0443_fXL8sJ47Ys7aj8uqXviQvOyFvPzicbJN3WhQUuiKGNzGLOgeJK2_rpHG7hA4F14ngUDhLGeVRfeDgkzO6QSi5YM_" />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-3 text-white">
+              <p class="text-[13px] font-semibold">4D Ultrasound Scan Suite</p>
+              <p class="text-[10px] text-white/80">High-Resolution Doppler</p>
+            </div>
+          </div>
+          <div
+            class="rounded-xl overflow-hidden bg-surface-container border border-surface-container-high group relative">
+            <img alt="Our IUI Room"
+              class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBguijTLz6v1912QEt_Mu8TJFRRbC3JWfmxysH5xc58S7KHPHdcst9hxgbHMbr9q3B21NWLltPwCu5CjKdeh7u59IBWGioFiYOdncniZjwJYTeY-YJ8ZPa8faoE0x2f85lOjyJHPOInLwlJgwIs-4g0hdqmr13fpRo66gg7EjoofDIRDY02La_wpbUicbYDcpRJLqvlr0SSvcFB4PKePFqlHEemD9wdsjct1jzAeWUhExlCBkskXNvF" />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-3 text-white">
+              <p class="text-[13px] font-semibold">Dedicated IUI Suite</p>
+              <p class="text-[10px] text-white/80">Private Restorative Care</p>
+            </div>
+          </div>
+          <div
+            class="rounded-xl overflow-hidden bg-surface-container border border-surface-container-high group relative">
+            <img alt="Doctor Consultation Room"
+              class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdtUfsh1qk81kDjrxnlZfzY85CZ77COsMr1CPkOFarhwlt7-1s5_gLERhbUvkjGuFeCLP-3uCIffdXZhnwJVPuCmvRQ0rij-Evixm2tL4V8dkj52e9FGvFo4f2h5oRtSdVYVOzfHWNgjJLIt7Z5Oc73eHzqb-HwSb0ByC8YIZ3xDbsZacSDO4gQUEjmbAuviyu1KPmF-BfRpm0u2cLMckkT13WewCfQ-D9WXrDnRuMdJA8n3oUnkpi" />
+            <div
+              class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-3 text-white">
+              <p class="text-[13px] font-semibold">Consultation Suites</p>
+              <p class="text-[10px] text-white/80">Sound-Insulated Privacy</p>
+            </div>
+          </div>
+        </div>
+        <!-- 4 Verbatim Pillars below the photos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          <div class="p-5 rounded-xl bg-surface-container-low border border-surface-container-high">
+            <h4 class="font-display text-[18px] text-primary font-medium">Comfortable OPDs</h4>
+            <p class="mt-1.5 text-[12px] text-on-surface-variant leading-relaxed">Spacious air-conditioned waiting
+              lounges and dedicated nursing coordinators.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-surface-container-low border border-surface-container-high">
+            <h4 class="font-display text-[18px] text-primary font-medium">On-Site Pharmacy</h4>
+            <p class="mt-1.5 text-[12px] text-on-surface-variant leading-relaxed">Immediate access to specialized
+              fertility hormones, stimulation injections, and medications.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-surface-container-low border border-surface-container-high">
+            <h4 class="font-display text-[18px] text-primary font-medium">Full-Time Diagnostic Lab</h4>
+            <p class="mt-1.5 text-[12px] text-on-surface-variant leading-relaxed">State-of-the-art laboratory for
+              accurate same-day hormone, semen, and blood analysis.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-surface-container-low border border-surface-container-high">
+            <h4 class="font-display text-[18px] text-primary font-medium">Advanced Radiology</h4>
+            <p class="mt-1.5 text-[12px] text-on-surface-variant leading-relaxed">High-definition pelvic scans,
+              sonohysterography, and fetal imaging suites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 8. PATIENT STORIES OF HOPE & VERBATIM TESTIMONIAL                -->
+    <!-- ================================================================= -->
+    <section class="w-full py-20 bg-surface-container-low" id="gallery">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-[11px] font-bold tracking-[0.2em] uppercase text-secondary">PATIENT STORIES</span>
+          <h2 class="font-display text-[36px] sm:text-[44px] text-primary mt-2">
+            <span class="font-serif-italic text-secondary">Gallery</span>
+          </h2>
+          <p class="mt-2 text-[15px] text-on-surface-variant font-light">
+            Real stories from families who found their path to parenthood at ASCAS.
+          </p>
+        </div>
+        <!-- Yaal-style Grid of Real Stories Thumbnails -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container shadow-xs">
+            <img alt="Academic Fellowship Batchmates"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0YpIdnMnQXlFpf0JPLvyL6eTg5tqspD1JbKYMPlHemJ9cmoP7OliCgL8YcZDs6zFde8VRosXnqFyJiXqxL6DYxEdzqmhMa7C7mPQl3FOvyl-1mIjYjCsLJxwh_ystZ7s6K6xhwEmvhEATONDmhnXTGzvghQjxTFkMJvC13V_UkIqtZuK8NmovVyl9ap6mxmZ3auPdfpMio2eZtG-6_Fa0wPwMoYJwQ8XbxcDCagqeon0trNYwp2FT" />
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container shadow-xs">
+            <img alt="IFS CME Stage"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7aXXGgWOuxD8xldYXNS76IbT3E8R30_yiv0ulTkhQksXs1gL5-AHdM714y3HFWgjMlQMLMuHr9fibAb2GKRhPKpi1gmP9gEeDHsEDMIvCI39hgS5_lA5bJMyvvARWLKH6xh96s9_pk6Fj4SZ8_ZDetLrVXJqrs7wrX0apKYXMoBihwbomp_uoXOrPOY_cV0WZa6k8A4r0120sgJ2G3kdTZmvfsVuiE5BwpHiGTCoXSeACkMY1U1xS" />
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container shadow-xs">
+            <img alt="Mentor Recognition"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN50nXNrSqcOY1ivyCS2kROAkFhmIBkERteGh0e4yywuvvHiD0p5HDywR5MzcKS6P6AHqSYUAR1iazcFQn0U9mt_gOVAJ9G0QpLxozWExQtKtuNr3nVMCihj_mvEg1TT5cQrr4dfloBoCORE77ATgqSaBmI2YLeVhsFtQKPquOrOERLmFJmTOgl3f42pgJp93faAUOvx1uyYAlJpA7RlUtgAnVamd2FvYF_GGHYRTfHEJTv2be29QO" />
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container shadow-xs">
+            <img alt="GBR Fertility Stage"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1yP5BZ5VyJgSMDEONGIvxnf4x3XfXR62ntdlxJKkzXsjBvHlAkRDusvCPd6S9iA6lC-eTAIbG23gDabao4BWk4WEVaEXyp6s96J8hszUpJknVxg_J_oxCWGIuoerghPQ3QsmMA4ls5YKoFa33O-AMX9K-Th-2oa1aTPszAwGHqLpNPpqG-Scm4p6mxeXega6LMwshWzTlHKVqyZpdPglyMueSCdf9idb3mLF-cQEwYEnlkEuh_YEf" />
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container shadow-xs">
+            <img alt="Laparoscopic Surgery Session"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEizJMolPWrN5KHbRHhMz1S1X0iLD6zztJqRnRAdEdkXtYtv61UWaApx3XQw4pB_mTmnBokOvuOgw8NFn80CWlB1BsYOC0EFI9WrEqwgEJ2_ymiIBCoCXX3JGFoUyhHso6OjOpBu9wV_lq-th-0HCMWNLX75fW-qugsIXmhXAdFdFjWUrZldO-6CoG_UYcX7wi-_rf4oOPKjjuaPxODqD4xEUOj776R6yLS9HTFb2zBEjlIj1jMv6K" />
+          </div>
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container shadow-xs">
+            <img alt="With AIIMS Mentor Prof Suresh"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3wbHQxaJNx0_6ZCRJnlKYnA8e5VRi7gJs_tnnn1iIcLUIQhrRLnsnNU4Nn0ywFfHxQWolb7GrUD5lxHxIEerT3W-9K95WwDokkvWsA2dcH2V6C9KbAWuo7XQHfXB-0VAi3esrQAVbj2yaW3etFCrAlJkp8W07_ku6wHMwTBpUYIdgPWQI8NLDKNQI9EXDq8Dw6rI5ERNqPmGRdSosT5uEabDJZ8R2WfhbPykcPQX8HaVzDCyiqf6q" />
+          </div>
+        </div>
+        <!-- Featured Verbatim Testimonial Card (Mohamed Akthar) -->
+        <div
+          class="max-w-3xl mx-auto rounded-2xl bg-white p-8 sm:p-12 border border-surface-container-high shadow-sm text-center">
+          <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary">
+            <img alt="Mohamed Akthar" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRphpB2ch7wQ9eiLB04QS8MiV9JR6XQ51uoVTZhd3lfeTAOYnqlM8mF4098EvDawG9e3cMqSa7bK3eRQr7QAzF-aSrrkWYJi_pfLZcgxLg0YAlrbBuFEqqdd1YxyrXB347i5AtsLhVIzZ3G9k5ebANF6pNyfsOxMpKm_JgEkEwNQs9UdrjuagMXBA5lh_RbRztCUtk2YHf4gITfMYQGC_dn60eh1u0Hr0oe8ijvIsHyOk_0llKRgvb" />
+          </div>
+          <div class="flex items-center justify-center gap-1 text-gold-accent mb-4">
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <blockquote class="font-serif-italic text-[18px] sm:text-[20px] text-on-surface leading-relaxed">
+            “We are truly blessed to have been under the care of Dr. Aishwarya Parthasarathy for my wife's pregnancy and
+            safe delivery. From the very beginning, Dr. Aishwarya was nothing short of amazing — a gem of a person,
+            always with a positive attitude, extremely friendly, and someone who genuinely puts her heart into caring
+            for her patients.
+            <br /><br />
+            A special thanks to Dr. Ashwin, an excellent radiologist, who conducted all of my wife's scans with great
+            detail, patience, and care. His calm approach and thorough explanations gave us so much clarity. We also
+            want to sincerely thank the amazing nurses Anu, Sharmi, and Ashwini for their exceptional care during every
+            hospital visit!”
+          </blockquote>
+          <div class="mt-6">
+            <h5 class="font-display text-[20px] text-primary font-semibold">Mohamed Akthar</h5>
+            <p class="text-[12px] text-secondary font-medium uppercase tracking-wider">Grateful Parent • Verified
+              Patient Review</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================================================= -->
+    <!-- 9. YAAL-STYLE CONVERSION CALLOUT BANNER                           -->
+    <!-- ================================================================= -->
+    <section class="w-full bg-primary text-white py-16 sm:py-20 relative overflow-hidden">
+      <div class="max-w-[1320px] mx-auto px-4 sm:px-8 relative z-10 text-center">
+        <span class="text-[11px] font-bold tracking-[0.2em] uppercase text-gold-accent">BEGIN TODAY</span>
+        <h2 class="font-display text-[38px] sm:text-[50px] font-normal mt-2 leading-tight">
+          Ready to Start Your <span class="font-serif-italic text-gold-accent">Journey?</span>
+        </h2>
+        <p class="mt-3 text-[16px] text-white/80 max-w-xl mx-auto font-light leading-relaxed">
+          Take the first step towards parenthood. Book a personal consultation with Dr. Aishwarya Parthasarathy today.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <a class="px-8 py-3.5 rounded-full bg-white text-primary font-semibold text-[14px] hover:bg-gold-soft transition-all shadow-lg"
+            href="#book">
+            Book Appointment
+          </a>
+          <a class="px-8 py-3.5 rounded-full bg-white/10 text-white border border-white/25 hover:bg-white/20 font-medium text-[14px] transition-all flex items-center gap-2"
+            href="https://wa.me/919342521779" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px] text-gold-accent">chat</span>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ================================================================= -->
+  <!-- LUXURY BRAND FOOTER (DEEP MAROON & GOLD)                        -->
+  <!-- ================================================================= -->
+  <footer class="w-full bg-primary-dark text-white pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-[1320px] mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <!-- Brand Summary -->
+        <div class="lg:col-span-4 flex flex-col">
+          <div class="flex items-center mb-4 bg-white p-2 rounded-lg inline-block self-start">
+            <img src="image.png" alt="ASCAS Logo" class="h-10 w-auto object-contain">
+          </div>
+          <p class="text-[13px] text-white/70 leading-relaxed max-w-sm mb-4">
+            Accumed Speciality Clinic &amp; Scans. Providing compassionate fertility care, advanced 4D diagnostic scans,
+            and high-success IVF/IUI treatments in Chennai.
+          </p>
+          <p class="text-[12px] text-gold-accent font-medium flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[15px]">verified</span>
+            Open 6 Days a Week (Mon - Sat)
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="lg:col-span-2">
+          <h4 class="font-display text-[18px] text-gold-accent mb-4 font-normal">Quick Links</h4>
+          <ul class="space-y-2 text-[13px] text-white/75">
+            <li><a class="hover:text-white transition-colors" href="#">Home</a></li>
+            <li><a class="hover:text-white transition-colors" href="#centres">Our Centres</a></li>
+            <li><a class="hover:text-white transition-colors" href="#specialists">Specialist Doctors</a></li>
+            <li><a class="hover:text-white transition-colors" href="#facilities">Labs &amp; OT</a></li>
+            <li><a class="hover:text-white transition-colors" href="#gallery">Stories of Hope</a></li>
+            <li><a class="hover:text-white transition-colors" href="#book">Book Consultation</a></li>
+          </ul>
+        </div>
+        <!-- Treatments -->
+        <div class="lg:col-span-3">
+          <h4 class="font-display text-[18px] text-gold-accent mb-4 font-normal">Treatments</h4>
+          <ul class="space-y-2 text-[13px] text-white/75">
+            <li><a class="hover:text-white transition-colors" href="#services">IVF &amp; ICSI Protocols</a></li>
+            <li><a class="hover:text-white transition-colors" href="#services">IUI Treatment</a></li>
+            <li><a class="hover:text-white transition-colors" href="#services">Fertility Preservation (Egg Freezing)</a>
+            </li>
+            <li><a class="hover:text-white transition-colors" href="#services">Laparoscopic Surgery</a></li>
+            <li><a class="hover:text-white transition-colors" href="#services">Male Infertility Evaluation</a></li>
+            <li><a class="hover:text-white transition-colors" href="#services">3D/4D Diagnostic Ultrasound</a></li>
+          </ul>
+        </div>
+        <!-- Chennai Centres -->
+        <div class="lg:col-span-3">
+          <h4 class="font-display text-[18px] text-gold-accent mb-4 font-normal">Our Centres</h4>
+          <div class="space-y-4 text-[12px] text-white/75">
+            <div>
+              <p class="font-semibold text-white">Valasaravakkam Flagship</p>
+              <p class="mt-0.5 text-white/65">24 Chowdhary Nagar Main Rd, Arcot Rd, Chennai 600087</p>
+              <a class="text-gold-accent hover:underline mt-0.5 inline-block font-medium" href="tel:+919342521779">+91
+                93425 21779</a>
+            </div>
+            <div>
+              <p class="font-semibold text-white">Vadapalani &amp; Saligramam</p>
+              <p class="mt-0.5 text-white/65">14, Arunachalam Rd, Saligramam (Near Metro), Chennai 600093</p>
+              <a class="text-gold-accent hover:underline mt-0.5 inline-block font-medium" href="tel:+919342521907">+91
+                93425 21907</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright & Legal -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-white/50">
+        <p>© 2025 ASCAS Fertility &amp; Women's Center (Accumed Speciality Clinic and Scans). All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+          <a class="hover:text-white transition-colors" href="#">Patient Rights</a>
+          <a class="hover:text-white transition-colors" href="tel:+919342521779">Emergency Desk</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Floating Fast Action WhatsApp Bar -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-2.5">
+    <a aria-label="WhatsApp Us"
+      class="w-12 h-12 rounded-full bg-[#25D366] text-white shadow-xl flex items-center justify-center hover:scale-105 transition-transform"
+      href="https://wa.me/919342521779" rel="noopener noreferrer" target="_blank">
+      <span class="material-symbols-outlined text-[24px]">chat</span>
+    </a>
+    <a aria-label="Call Clinic"
+      class="w-12 h-12 rounded-full bg-primary text-white border border-gold-border shadow-xl flex items-center justify-center hover:scale-105 transition-transform"
+      href="tel:+919342521779">
+      <span class="material-symbols-outlined text-[22px]">call</span>
+    </a>
+  </div>
+</body>
+
+</html>
