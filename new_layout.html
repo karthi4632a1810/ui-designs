@@ -1,4 +1,32 @@
 <!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+  <!-- Netlify Badge Permanent Purge -->
+  <script>
+    (function() {
+      function purgeNetlifyBadge() {
+        const el = document.getElementById('nl-badge-frame') || 
+                   document.querySelector('iframe[title*="Netlify"]') ||
+                   document.querySelector('iframe[srcdoc*="nl-wrap"]') ||
+                   document.querySelector('iframe[srcdoc*="Netlify"]') ||
+                   document.querySelector('[data-nl-ready]');
+        if (el) {
+          el.remove();
+        }
+      }
+      purgeNetlifyBadge();
+      try {
+        window.postMessage({nlHud: 'state', value: 'hidden'}, '*');
+      } catch(e) {}
+      if (window.MutationObserver) {
+        new MutationObserver(function() {
+          purgeNetlifyBadge();
+        }).observe(document.documentElement, { childList: true, subtree: true });
+      }
+      window.addEventListener('DOMContentLoaded', purgeNetlifyBadge);
+      window.addEventListener('load', purgeNetlifyBadge);
+      setInterval(purgeNetlifyBadge, 100);
+    })();
+  </script>
+
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>ASCAS Fertility &amp; Women's Center | Accumed Speciality Clinic &amp; Scans</title>
@@ -74,22 +102,38 @@
   </script>
 <!-- Custom CSS for Watermarks & Glassmorphic Effects -->
 <style data-purpose="custom-effects">
+    #nl-badge-frame,
+    iframe#nl-badge-frame,
+    iframe[id*="nl-badge"],
+    iframe[title*="Netlify"],
+    iframe[srcdoc*="nl-wrap"],
+    iframe[srcdoc*="Netlify"],
+    [data-nl-ready],
     .nl-wrap,
-    [class*="nl-wrap"] {
+    [class*="nl-wrap"],
+    #nl-badge-frame .nl-wrap,
+    #nl-badge-frame * {
       display: none !important;
       visibility: hidden !important;
       opacity: 0 !important;
-      height: 0 !important;
-      width: 0 !important;
-      max-height: 0 !important;
-      max-width: 0 !important;
-      overflow: hidden !important;
       pointer-events: none !important;
+      width: 0px !important;
+      height: 0px !important;
+      max-width: 0px !important;
+      max-height: 0px !important;
+      min-width: 0px !important;
+      min-height: 0px !important;
+      overflow: hidden !important;
       position: absolute !important;
-      z-index: -99999 !important;
+      top: -99999px !important;
+      left: -99999px !important;
+      z-index: -99999999 !important;
       clip: rect(0, 0, 0, 0) !important;
-      clip-path: inset(50%) !important;
+      clip-path: inset(100%) !important;
+      transform: scale(0) !important;
     }
+
+
 
 
     .text-watermark {
