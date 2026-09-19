@@ -23,28 +23,28 @@
                     colors: {
             "background": "#ffffff",
             "surface": "#ffffff",
-            "surface-container-low": "#fafafa",
-            "surface-container": "#f5f5f5",
-            "surface-container-high": "#ebebeb",
-            "surface-container-highest": "#e0e0e0",
+            "surface-container-low": "#faf8f9",
+            "surface-container": "#f6f2f4",
+            "surface-container-high": "#f0eaec",
+            "surface-container-highest": "#eae1e5",
             "surface-container-lowest": "#ffffff",
             "primary": "#5f1235",
             "primary-dark": "#3c0b21",
-            "primary-container": "#7a1744",
+            "primary-container": "#901b50",
             "on-primary": "#ffffff",
-            "on-primary-container": "#fafafa",
-            "primary-fixed": "#fafafa",
+            "on-primary-container": "#faf8f9",
+            "primary-fixed": "#faf8f9",
             "secondary": "#d4af37",
-            "secondary-container": "#fdfbf7",
-            "secondary-fixed": "#fdfbf7",
+            "secondary-container": "#fdf6e7",
+            "secondary-fixed": "#fdf6e7",
             "gold-accent": "#d4af37",
-            "gold-soft": "#fdfbf7",
+            "gold-soft": "#fdf6e7",
             "gold-border": "#e8c564",
-            "on-surface": "#1f1f1f",
-            "on-surface-variant": "#525252",
-            "outline": "#737373",
-            "outline-variant": "#e5e5e5",
-            "mint-soft": "#fdfbf7",
+            "on-surface": "#2d1620",
+            "on-surface-variant": "#5f3d4a",
+            "outline": "#906d7b",
+            "outline-variant": "#d9bcca",
+            "mint-soft": "#fdf6e7",
             "mint-badge": "#d4af37",
             rose: {
               950: '#3c0b21',
@@ -68,12 +68,12 @@
               300: '#e4c46d',
               200: '#e8c564',
               100: '#f0d99a',
-              50: '#fdfbf7',
+              50: '#fdf6e7',
             }
-          }
+          }, }
         }
       }
-    };
+    }
   </script>
 <!-- Custom CSS for Watermarks & Glassmorphic Effects -->
 <style data-purpose="custom-effects">
@@ -119,83 +119,38 @@
 </head>
 <body class="bg-[#F6F8F7] text-slate-800 font-sans antialiased selection:bg-rose-500 selection:text-white relative overflow-x-hidden">
 <!-- BEGIN: TopFloatingHeader -->
-<header class="fixed top-0 left-0 right-0 z-50 pt-2.5 sm:pt-4 px-2.5 sm:px-6 lg:px-8 pointer-events-none transition-all duration-300" data-purpose="navigation-header">
-<div class="max-w-7xl mx-auto flex items-center justify-between pointer-events-auto gap-2 sm:gap-4">
+<header class="fixed top-0 left-0 right-0 z-50 pt-4 px-4 sm:px-6 lg:px-8 pointer-events-none transition-all duration-300" data-purpose="navigation-header">
+<div class="max-w-7xl mx-auto flex items-center justify-between pointer-events-auto">
 <!-- Brand Logo Container -->
-<a class="glass-panel px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full flex items-center gap-2 sm:gap-3 shadow-md hover:border-gold-border/60 transition shrink-0" data-purpose="site-logo" href="#">
-<img src="image.png" alt="ASCAS Logo" class="h-8 sm:h-10 w-auto object-contain">
-<div class="flex flex-col">
-<span class="block text-primary font-extrabold tracking-tight text-xs sm:text-base leading-tight">ASCAS <span class="text-secondary font-bold">FERTILITY</span></span>
-<span class="hidden md:block text-[9px] sm:text-[10px] text-slate-500 font-medium tracking-wide uppercase">Accumed Speciality Clinic &amp; Scans</span>
+<a class="glass-panel px-5 py-2.5 rounded-full flex items-center gap-3.5 shadow-floating-card hover:border-rose-400/80 transition group" data-purpose="site-logo" href="#">
+<img src="image.png" alt="ASCAS Logo" class="h-12 w-auto object-contain">
+<div>
+<span class="block text-rose-950 font-extrabold tracking-tight text-base leading-none">ASCAS <span class="text-rose-600">FERTILITY</span></span>
+<span class="block text-[10px] text-slate-500 font-medium tracking-wide uppercase mt-0.5">Accumed Speciality Clinic &amp; Scans</span>
 </div>
 </a>
-<!-- Desktop Nav Links Capsule (Visible on xl screens and above, clean fit) -->
-<nav class="hidden xl:flex items-center gap-0.5 2xl:gap-1 glass-panel px-3 py-1.5 rounded-full shadow-md text-[13px] font-medium text-slate-700 whitespace-nowrap shrink-0" data-purpose="nav-menu">
-<a class="px-3.5 py-1.5 rounded-full hover:text-primary hover:bg-white/80 transition" href="#about">About Clinic</a>
-<a class="px-3.5 py-1.5 rounded-full hover:text-primary hover:bg-white/80 transition" href="#specialists">Our Specialists</a>
-<a class="px-3.5 py-1.5 rounded-full hover:text-primary hover:bg-white/80 transition" href="#treatments">Treatments &amp; Tech</a>
-<a class="px-3.5 py-1.5 rounded-full hover:text-primary hover:bg-white/80 transition" href="#why-ascas">Success Metrics</a>
-<a class="px-3.5 py-1.5 rounded-full hover:text-primary hover:bg-white/80 transition" href="#locations">Dual Hubs</a>
-<a class="px-3.5 py-1.5 rounded-full hover:text-primary hover:bg-white/80 transition" href="#testimonials">Stories</a>
+<!-- Desktop Nav Links Capsule -->
+<nav class="hidden lg:flex items-center gap-1 glass-panel px-3 py-1.5 rounded-full shadow-floating-card text-xs font-semibold tracking-wide text-slate-700" data-purpose="nav-menu">
+<a class="px-4 py-2 rounded-full hover:text-rose-700 hover:bg-rose-50/70 transition" href="#about">About Clinic</a>
+<a class="px-4 py-2 rounded-full hover:text-rose-700 hover:bg-rose-50/70 transition" href="#specialists">Our Specialists</a>
+<a class="px-4 py-2 rounded-full hover:text-rose-700 hover:bg-rose-50/70 transition" href="#treatments">Treatments &amp; Tech</a>
+<a class="px-4 py-2 rounded-full hover:text-rose-700 hover:bg-rose-50/70 transition" href="#why-ascas">Success Metrics</a>
+<a class="px-4 py-2 rounded-full hover:text-rose-700 hover:bg-rose-50/70 transition" href="#locations">Dual Hubs</a>
+<a class="px-4 py-2 rounded-full hover:text-rose-700 hover:bg-rose-50/70 transition" href="#testimonials">Stories</a>
 </nav>
-<!-- Action Capsule & Fast Track Booking & Hamburger Toggle -->
-<div class="flex items-center gap-1.5 sm:gap-2.5 shrink-0" data-purpose="header-cta-group">
-<!-- WhatsApp Priority Desk (hidden below lg) -->
-<a class="hidden lg:inline-flex items-center gap-2 glass-panel px-3 py-1.5 rounded-full text-xs font-semibold text-primary hover:text-secondary transition shadow-sm border border-gold-border/30 hover:border-gold-border whitespace-nowrap" href="https://wa.me/919342521779" target="_blank" rel="noopener noreferrer">
-<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-<i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+<!-- Action Capsule & Fast Track Booking -->
+<div class="flex items-center gap-2 sm:gap-3" data-purpose="header-cta-group">
+<a class="hidden sm:inline-flex items-center gap-2 glass-panel px-3.5 py-2.5 rounded-full text-xs font-bold text-rose-800 hover:text-rose-600 transition shadow-floating-card" href="https://wa.me/919940127500" target="_blank">
+<span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
+<i class="fa-brands fa-whatsapp text-sm text-rose-600"></i>
 <span>Priority Desk</span>
 </a>
-<!-- Book Consultation CTA -->
-<a class="relative group overflow-hidden bg-primary text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-md hover:bg-primary-container hover:shadow-lg transition-all flex items-center gap-1.5 sm:gap-2 border border-gold-border/40 whitespace-nowrap" href="#book-consult">
-<span><span class="hidden sm:inline">Book </span>Consultation</span>
-<span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/20 flex items-center justify-center text-[9px] sm:text-[10px] group-hover:translate-x-0.5 transition-transform text-secondary">
+<a class="relative group overflow-hidden bg-gradient-to-r from-rose-850 via-rose-800 to-rose-700 text-white text-xs sm:text-sm font-semibold px-5 py-3 rounded-full shadow-glow-emerald transition duration-300 hover:shadow-xl hover:scale-[1.02] flex items-center gap-2.5" href="#book-consult">
+<span>Book Consultation</span>
+<span class="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px] group-hover:translate-x-1 transition-transform">
 <i class="fa-solid fa-arrow-right"></i>
 </span>
 </a>
-<!-- Mobile/Tablet Hamburger Menu Button (visible below xl) -->
-<button id="navToggleBtn" class="xl:hidden glass-panel p-2 sm:p-2.5 rounded-full text-primary hover:text-secondary shadow-md transition flex items-center justify-center border border-white/80" aria-label="Toggle Navigation Menu">
-<i id="navToggleIcon" class="fa-solid fa-bars text-sm sm:text-base"></i>
-</button>
-</div>
-</div>
-<!-- Mobile/Tablet Dropdown Drawer Menu -->
-<div id="mobileDrawer" class="hidden max-w-7xl mx-auto mt-2 pointer-events-auto transition-all duration-300">
-<div class="glass-panel rounded-2xl p-5 shadow-2xl border border-white/80 backdrop-blur-2xl flex flex-col gap-3 bg-white/95">
-<a class="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-primary hover:bg-rose-50/50 transition mobile-nav-link" href="#about">
-<span>About Clinic</span>
-<i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-</a>
-<a class="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-primary hover:bg-rose-50/50 transition mobile-nav-link" href="#specialists">
-<span>Our Specialists</span>
-<i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-</a>
-<a class="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-primary hover:bg-rose-50/50 transition mobile-nav-link" href="#treatments">
-<span>Treatments &amp; Tech</span>
-<i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-</a>
-<a class="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-primary hover:bg-rose-50/50 transition mobile-nav-link" href="#why-ascas">
-<span>Success Metrics</span>
-<i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-</a>
-<a class="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-primary hover:bg-rose-50/50 transition mobile-nav-link" href="#locations">
-<span>Dual Hubs</span>
-<i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-</a>
-<a class="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-primary hover:bg-rose-50/50 transition mobile-nav-link" href="#testimonials">
-<span>Stories</span>
-<i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-</a>
-<div class="pt-2 border-t border-slate-100 flex flex-col sm:flex-row gap-2">
-<a class="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200" href="https://wa.me/919342521779" target="_blank" rel="noopener noreferrer">
-<i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
-<span>WhatsApp Priority Helpline</span>
-</a>
-<a class="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl bg-primary text-white text-xs font-bold" href="tel:+919342521779">
-<i class="fa-solid fa-phone text-xs text-secondary"></i>
-<span>Call Clinic: +91 93425 21779</span>
-</a>
-</div>
 </div>
 </div>
 </header>
@@ -209,7 +164,35 @@
 <!-- Background Ambient Glow Orbs -->
 <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[550px] bg-gradient-to-br from-rose-200/40 via-amber-200/30 to-cyan-100/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
 <div class="absolute top-20 right-10 w-96 h-96 bg-teal-200/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-
+<!-- Floating Angled Badges / Stickers (Inspired by Reference 5 & 7) -->
+<div class="hidden lg:block absolute left-8 top-44 sticker-badge rotate-[-8deg] bg-white/95 border border-rose-100 px-4 py-2 rounded-2xl z-20" data-purpose="floating-badge-cleanroom">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-xs">
+<i class="fa-solid fa-wind"></i>
+</div>
+<div>
+<div class="text-[10px] uppercase font-bold tracking-widest text-rose-600">Pure Air Standard</div>
+<div class="text-xs font-extrabold text-slate-800">Class-10,000 Cleanroom</div>
+</div>
+</div>
+</div>
+<div class="hidden lg:block absolute right-12 top-48 sticker-badge rotate-[7deg] bg-white/95 border border-rose-100 px-4 py-2 rounded-2xl z-20" data-purpose="floating-badge-faculty">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-xl bg-cyan-100 text-cyan-800 flex items-center justify-center text-xs">
+<i class="fa-solid fa-graduation-cap"></i>
+</div>
+<div>
+<div class="text-[10px] uppercase font-bold tracking-widest text-cyan-600">Faculty Credentials</div>
+<div class="text-xs font-extrabold text-slate-800">MRCOG (UK) &amp; FRCR Certified</div>
+</div>
+</div>
+</div>
+<div class="hidden md:block absolute left-14 bottom-32 sticker-badge rotate-[6deg] bg-rose-950 text-white px-4 py-2 rounded-2xl z-20 shadow-xl" data-purpose="floating-badge-metro">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-location-dot text-amber-400 text-xs"></i>
+<span class="text-xs font-bold tracking-wide">Valasaravakkam &amp; Vadapalani Hubs</span>
+</div>
+</div>
 <!-- Hero Content Container -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
 <!-- Micro Badge Pill -->
@@ -222,12 +205,12 @@
       </div>
 <!-- Main Headline with Serif & Gradient Fusion -->
 <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 max-w-5xl mx-auto leading-[1.12]">
-        Unlock the Miracle of Life with 
-        <span class="font-serif italic font-normal text-rose-800 block sm:inline">Accumed Speciality</span> 
-        Clinic and Scans.
+        Empowering Parenthood with 
+        <span class="font-serif italic font-normal text-rose-800 block sm:inline">Precision Science</span> 
+        &amp; Unwavering Care.
       </h1>
 <p class="mt-6 text-base sm:text-xl text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed">
-        Your Journey to Parenthood starts here.
+        Where world-class UK fellowship-trained fertility specialists, cutting-edge embryology incubators, and Voluson™ 3D/4D fetal diagnostics unite to turn your deepest dream into a healthy heartbeat.
       </p>
 <!-- Quick Action Capsule CTA Group -->
 <div class="mt-8 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
@@ -439,40 +422,145 @@
           We strip away the stress, opacity, and clinical guesswork of fertility care with verifiable science, honest prognosis, and gold-standard embryology.
         </p>
 </div>
-<!-- Simple 4-Card Grid (Matching index.html) -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
-  <!-- Feature 1 -->
-  <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-start gap-4 hover:border-rose-300 transition-colors">
-    <span class="material-symbols-outlined text-rose-800 text-[32px] mt-1">favorite</span>
-    <div>
-      <h3 class="font-bold text-slate-900 text-[16px]">100% IVF Focus</h3>
-      <p class="text-[13px] text-slate-600 mt-2 leading-relaxed">Dedicated exclusively to fertility treatments, ensuring focused and highly specialized care for your journey.</p>
-    </div>
-  </div>
-  <!-- Feature 2 -->
-  <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-start gap-4 hover:border-rose-300 transition-colors">
-    <span class="material-symbols-outlined text-rose-800 text-[32px] mt-1">biotech</span>
-    <div>
-      <h3 class="font-bold text-slate-900 text-[16px]">State-of-the-art lab</h3>
-      <p class="text-[13px] text-slate-600 mt-2 leading-relaxed">Equipped with the latest technology and adhering to global standards for optimal embryo development.</p>
-    </div>
-  </div>
-  <!-- Feature 3 -->
-  <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-start gap-4 hover:border-rose-300 transition-colors">
-    <span class="material-symbols-outlined text-rose-800 text-[32px] mt-1">diversity_1</span>
-    <div>
-      <h3 class="font-bold text-slate-900 text-[16px]">Experienced Team</h3>
-      <p class="text-[13px] text-slate-600 mt-2 leading-relaxed">Led by highly qualified specialists with extensive training from premier institutes like AIIMS &amp; JIPMER.</p>
-    </div>
-  </div>
-  <!-- Feature 4 -->
-  <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex items-start gap-4 hover:border-rose-300 transition-colors">
-    <span class="material-symbols-outlined text-rose-800 text-[32px] mt-1">support_agent</span>
-    <div>
-      <h3 class="font-bold text-slate-900 text-[16px]">24/7 support</h3>
-      <p class="text-[13px] text-slate-600 mt-2 leading-relaxed">Round-the-clock assistance and guidance throughout your entire fertility treatment process.</p>
-    </div>
-  </div>
+<!-- Asymmetrical Bento Grid (Reference 6 & 8 Style) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Bento Card 1 (Span 7): Precision Cleanroom & Triple Gas Incubation -->
+<div class="md:col-span-7 bg-white rounded-3xl p-8 border border-slate-200/80 shadow-floating-card relative overflow-hidden group hover:border-rose-300 transition duration-300 flex flex-col justify-between" data-purpose="bento-cleanroom">
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-6">
+<span class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-700 flex items-center justify-center text-xl font-bold">
+                01
+              </span>
+<span class="text-xs uppercase font-bold tracking-wider px-3 py-1 bg-rose-100/60 text-rose-800 rounded-full">
+                Laboratory Architecture
+              </span>
+</div>
+<h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-3 group-hover:text-rose-900 transition">
+              Class-10,000 Cleanroom &amp; Tri-Gas Culture Systems
+            </h3>
+<p class="text-slate-600 text-sm leading-relaxed max-w-xl">
+              Embryos are exquisitely vulnerable to ambient air impurities, volatile organic compounds (VOCs), and fluctuating temperatures. ASCAS houses a certified Class-10,000 laminar flow embryology laboratory equipped with positive pressure air handling, medical-grade VOC filtration, and individual isolette chambers ensuring the embryo develops in uterus-like stillness.
+            </p>
+</div>
+<!-- Feature Metric Chips Inside Bento -->
+<div class="grid grid-cols-3 gap-3 mt-8 pt-6 border-t border-slate-100">
+<div class="bg-[#F8FAF9] p-3 rounded-2xl border border-slate-100">
+<div class="text-xl sm:text-2xl font-bold text-rose-800 font-mono">0.3 µm</div>
+<div class="text-[11px] text-slate-500 font-medium">HEPA Filtration Limit</div>
+</div>
+<div class="bg-[#F8FAF9] p-3 rounded-2xl border border-slate-100">
+<div class="text-xl sm:text-2xl font-bold text-rose-800 font-mono">37.0°C</div>
+<div class="text-[11px] text-slate-500 font-medium">Precision Temp Isolette</div>
+</div>
+<div class="bg-[#F8FAF9] p-3 rounded-2xl border border-slate-100">
+<div class="text-xl sm:text-2xl font-bold text-rose-800 font-mono">6.0% CO₂</div>
+<div class="text-[11px] text-slate-500 font-medium">Optimized Gas Matrix</div>
+</div>
+</div>
+</div>
+<!-- Bento Card 2 (Span 5): 98.4% Success Rate Card (Dark Emerald Contrast) -->
+<div class="md:col-span-5 bg-gradient-to-br from-rose-950 via-rose-900 to-rose-850 rounded-3xl p-8 text-white shadow-floating-card relative overflow-hidden flex flex-col justify-between" data-purpose="bento-success-stat">
+<!-- Subtle Glow in Card -->
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-amber-400/20 rounded-full blur-2xl"></div>
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md text-amber-300 flex items-center justify-center text-xl">
+<i class="fa-solid fa-chart-pie"></i>
+</span>
+<span class="text-xs font-mono font-bold tracking-widest uppercase text-rose-300 bg-white/10 px-3 py-1 rounded-full">
+                Documented Cohort
+              </span>
+</div>
+<div class="text-5xl sm:text-6xl font-extrabold tracking-tight text-white mb-2 font-mono">
+              98.4<span class="text-amber-400 text-3xl">%</span>
+</div>
+<div class="text-lg font-serif text-rose-200 mb-3">Overall IVF/ICSI Cumulative Success Rate</div>
+<p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Calculated across consecutive blastocyst transfers, individualized ovarian stimulation regimens, and advanced male-factor ICSI protocols.
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-white/15 flex items-center justify-between">
+<span class="text-xs text-slate-300 font-medium">Verified by Accumed Clinical Audit</span>
+<span class="inline-flex items-center gap-1 text-amber-300 text-xs font-bold">
+              Explore Data <i class="fa-solid fa-arrow-right text-[10px]"></i>
+</span>
+</div>
+</div>
+<!-- Bento Card 3 (Span 5): Advanced Fetal & 3D/4D Voluson HD Diagnostic Hub -->
+<div class="md:col-span-5 bg-white rounded-3xl p-8 border border-slate-200/80 shadow-floating-card group hover:border-rose-300 transition duration-300 flex flex-col justify-between" data-purpose="bento-scans">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-700 flex items-center justify-center text-xl font-bold">
+                02
+              </span>
+<span class="text-xs uppercase font-bold tracking-wider px-3 py-1 bg-cyan-100/60 text-cyan-800 rounded-full">
+                Radiology &amp; Fetal
+              </span>
+</div>
+<h3 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-rose-900 transition">
+              Voluson™ 3D/4D HD Live Imaging &amp; Nuchal Translucency
+            </h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+              Operated under Dr. Ashwin Muralidharan (FRCR UK), our dedicated scan hub provides high-resolution anomaly scans, uterine artery Doppler, folliculometry, and early detection of congenital conditions with clinical certainty.
+            </p>
+</div>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="text-xs bg-slate-100 text-slate-700 font-medium px-3 py-1.5 rounded-xl">Targeted Anomaly (TIFFA)</span>
+<span class="text-xs bg-slate-100 text-slate-700 font-medium px-3 py-1.5 rounded-xl">Fetal Echocardiography</span>
+<span class="text-xs bg-slate-100 text-slate-700 font-medium px-3 py-1.5 rounded-xl">Pelvic 3D Saline Infusion</span>
+</div>
+</div>
+<!-- Bento Card 4 (Span 7): Step-by-Step Personalized Fertility Pathway -->
+<div class="md:col-span-7 bg-[#FCFAF7] rounded-3xl p-8 border border-amber-200/70 shadow-floating-card flex flex-col justify-between" data-purpose="bento-pathway">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-900 flex items-center justify-center text-xl font-bold">
+                03
+              </span>
+<span class="text-xs uppercase font-bold tracking-wider px-3 py-1 bg-amber-200/60 text-amber-900 rounded-full">
+                5-Stage Roadmap
+              </span>
+</div>
+<h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+              Your Transparent Care Journey
+            </h3>
+<p class="text-slate-600 text-sm mb-6">
+              No generic packages. Every couple receives an individualized treatment protocol with continuous WhatsApp updates.
+            </p>
+<!-- 5 Steps Flow (Inspired by reference 5 step cards) -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 text-center">
+<div class="bg-white p-3 rounded-2xl border border-slate-200/80 shadow-sm">
+<div class="text-xs font-mono font-bold text-rose-800">STEP 01</div>
+<div class="text-xs font-bold text-slate-900 mt-1">Diagnostic Deep-Dive</div>
+<div class="text-[10px] text-slate-500 mt-0.5">Hormone &amp; Semen Analysis</div>
+</div>
+<div class="bg-white p-3 rounded-2xl border border-slate-200/80 shadow-sm">
+<div class="text-xs font-mono font-bold text-rose-800">STEP 02</div>
+<div class="text-xs font-bold text-slate-900 mt-1">Controlled Stimulation</div>
+<div class="text-[10px] text-slate-500 mt-0.5">Mild hormone protocols</div>
+</div>
+<div class="bg-white p-3 rounded-2xl border border-slate-200/80 shadow-sm">
+<div class="text-xs font-mono font-bold text-rose-800">STEP 03</div>
+<div class="text-xs font-bold text-slate-900 mt-1">OPU &amp; ICSI</div>
+<div class="text-[10px] text-slate-500 mt-0.5">Class-10k Lab Fertilization</div>
+</div>
+<div class="bg-white p-3 rounded-2xl border border-slate-200/80 shadow-sm">
+<div class="text-xs font-mono font-bold text-rose-800">STEP 04</div>
+<div class="text-xs font-bold text-slate-900 mt-1">Blastocyst Transfer</div>
+<div class="text-[10px] text-slate-500 mt-0.5">Day 5 Embryo Placement</div>
+</div>
+<div class="bg-rose-900 text-white p-3 rounded-2xl border border-rose-950 shadow-sm col-span-2 sm:col-span-1">
+<div class="text-xs font-mono font-bold text-amber-300">STEP 05</div>
+<div class="text-xs font-bold text-white mt-1">Positive hCG</div>
+<div class="text-[10px] text-rose-200 mt-0.5">Antenatal Handover</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-xs text-slate-500">
+<span>Direct contact with senior embryologist throughout each stage</span>
+<a class="text-rose-700 font-bold hover:underline" href="#book-consult">Get Roadmap Consultation →</a>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -519,9 +607,9 @@
             </p>
 <!-- Education Qualifications Pill Box -->
 <div class="my-5 p-3 rounded-2xl bg-white border border-slate-200/70 text-xs space-y-1">
-<div class="text-slate-800 font-semibold">MBBS, DGO, DNB, MRCOG (UK)</div>
-<div class="text-slate-500 font-medium">Fellowship in Reproductive Medicine (AIIMS)</div>
-<div class="text-[11px] text-rose-700 font-semibold pt-1">Fellowship in Fetal Medicine (JIPMER)</div>
+<div class="text-slate-800 font-semibold">MD (OG), DNB (OG), FNB (Reproductive Med)</div>
+<div class="text-slate-500 font-medium">Fellowship in Reproductive Medicine • MRCOG (UK)</div>
+<div class="text-[11px] text-rose-700 font-semibold pt-1">National Board Certified Sub-Specialist</div>
 </div>
 <!-- Expertise Chips -->
 <div class="space-y-2 mb-6">
@@ -540,7 +628,7 @@
 <i class="fa-solid fa-calendar-check text-[11px] text-amber-300"></i>
 </a>
 </div>
-<!-- Doctor 2: Dr. Balakrishnan -->
+<!-- Doctor 2: Dr. Ashwin Muralidharan -->
 <div class="bg-gradient-to-b from-[#F8FAF9] to-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-floating-card hover:border-rose-400 transition-all duration-300 flex flex-col justify-between group" data-purpose="doctor-card-ashwin">
 <div>
 <!-- Doctor Header Avatar & Credential Badge -->
@@ -549,20 +637,20 @@
                 AM
               </div>
 <span class="absolute -top-2 -right-2 bg-cyan-100 text-cyan-900 text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-cyan-200">
-                NEONATOLOGIST
+                FRCR (UK)
               </span>
 </div>
 <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-rose-800 transition">
-              Dr. Balakrishnan
+              Dr. Ashwin Muralidharan
             </h3>
 <p class="text-xs font-bold text-cyan-800 tracking-wide mt-1 uppercase">
-              Consultant Neonatologist &amp; Pediatrician
+              Consultant Radiologist &amp; Fetal Medicine Specialist
             </p>
 <!-- Education Qualifications Pill Box -->
 <div class="my-5 p-3 rounded-2xl bg-white border border-slate-200/70 text-xs space-y-1">
-<div class="text-slate-800 font-semibold">MBBS, MD (Paed), DM (Neonatology)</div>
-<div class="text-slate-500 font-medium">Neonatology Lead</div>
-<div class="text-[11px] text-cyan-700 font-semibold pt-1">Pediatric Care Specialist</div>
+<div class="text-slate-800 font-semibold">MBBS, MDRD, DNB (Radio-Diagnosis)</div>
+<div class="text-slate-500 font-medium">FRCR (London, UK) • Specialist Fetal Imaging</div>
+<div class="text-[11px] text-cyan-700 font-semibold pt-1">Royal College of Radiologists Certified</div>
 </div>
 <!-- Expertise Chips -->
 <div class="space-y-2 mb-6">
@@ -820,7 +908,7 @@
 <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Preferred Specialist / Service</label>
 <select class="w-full rounded-2xl border-slate-200 text-sm px-4 py-3 focus:border-rose-600 focus:ring-rose-600 text-slate-700">
 <option>Dr. Aishwarya Parthasarathy (IVF / Fertility)</option>
-<option>Dr. Balakrishnan (Fetal 3D/4D Scans)</option>
+<option>Dr. Ashwin Muralidharan (Fetal 3D/4D Scans)</option>
 <option>Dr. M. Ashok Kumar (Laparoscopy &amp; GI)</option>
 <option>First Time Fertility Evaluation (Couple)</option>
 <option>Second Opinion on Failed IVF Cycle</option>
@@ -899,7 +987,7 @@
 <i class="fa-solid fa-star"></i>
 </div>
 <p class="text-slate-700 text-sm sm:text-base italic leading-relaxed mb-6 font-serif">
-              "Dr. Balakrishnan's 4D scan at 20 weeks was an unforgettable emotional experience. He spent nearly 45 minutes explaining every organ, cardiac chamber, and facial feature of our baby with reassuring calmness. The precision of the imaging at Accumed Scans is unmatched anywhere in Chennai."
+              "Dr. Ashwin Muralidharan's 4D scan at 20 weeks was an unforgettable emotional experience. He spent nearly 45 minutes explaining every organ, cardiac chamber, and facial feature of our baby with reassuring calmness. The precision of the imaging at Accumed Scans is unmatched anywhere in Chennai."
             </p>
 </div>
 <div class="flex items-center gap-3.5 pt-4 border-t border-slate-200/60">
@@ -1026,173 +1114,92 @@
 </div>
 </section>
 <!-- END: DualBranchLocationsSection -->
-<!-- BEGIN: MainFooter (Joy First Luxury Editorial Aesthetic with Light & Dark Mode) -->
-<footer id="siteFooter" class="transition-colors duration-300 bg-[#fbfbfa] dark:bg-[#0c0c0e] text-slate-700 dark:text-slate-300 pt-16 sm:pt-20 pb-12 border-t border-slate-200 dark:border-white/10 relative overflow-hidden" data-purpose="main-footer">
-  <!-- Subtle Watermark -->
-  <div class="absolute inset-x-0 bottom-0 text-center select-none pointer-events-none opacity-[0.03] dark:opacity-[0.035] font-extrabold text-[15vw] tracking-tighter text-slate-900 dark:text-white text-watermark">
-    ASCAS
-  </div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <!-- Top Grid: Brand Information & 3 Inquiries Columns -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-slate-200 dark:border-white/10">
-      
-      <!-- Brand & Accreditation Column (lg:col-span-5) -->
-      <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
-        <div>
-          <!-- Logo & Brand Title -->
-          <div class="flex items-center gap-4">
-            <div class="w-14 h-14 rounded-full border-2 border-amber-500/80 dark:border-amber-400/80 flex items-center justify-center p-2.5 bg-white dark:bg-white/5 shadow-md shrink-0">
-              <img src="image.png" alt="ASCAS Logo" class="w-full h-full object-contain">
-            </div>
-            <div>
-              <h3 class="text-xl sm:text-2xl font-black tracking-wider text-slate-900 dark:text-white uppercase leading-none">
-                ASCAS <span class="text-amber-600 dark:text-amber-400">FERTILITY</span>
-              </h3>
-              <p class="text-[10px] tracking-[0.25em] font-bold text-slate-500 dark:text-amber-300/80 uppercase mt-1">
-                WOMEN'S CENTER &amp; ADVANCED SCANS
-              </p>
-            </div>
-          </div>
-
-          <!-- Editorial Summary -->
-          <p class="mt-4 text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed max-w-md font-normal">
-            Premier turnkey center for advanced reproductive medicine, 4D anomaly scans &amp; laparoscopic surgery. Transforming fertility care into compassionate, personalized journeys with clinical precision.
+<!-- BEGIN: MainFooter -->
+<footer class="bg-rose-950 text-white pt-20 pb-12 border-t border-rose-900 relative overflow-hidden" data-purpose="main-footer">
+<!-- Watermark behind Footer -->
+<div class="absolute inset-x-0 bottom-0 text-center select-none pointer-events-none opacity-[0.04] font-extrabold text-[16vw] tracking-tighter text-white text-watermark">
+      ASCAS
+    </div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<!-- Top Grid of Footer -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-white/10">
+<!-- Col 1: Brand details -->
+<div class="md:col-span-4 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-rose-600 flex items-center justify-center text-white text-lg font-bold">
+<i class="fa-solid fa-dna text-amber-300"></i>
+</div>
+<div>
+<span class="block text-white font-extrabold text-lg tracking-tight">ASCAS FERTILITY</span>
+<span class="block text-[11px] text-rose-300 uppercase tracking-wider">Accumed Speciality Clinic &amp; Scans</span>
+</div>
+</div>
+<p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+            Dedicated Center of Reproductive Medicine, Minimally Invasive Gynecological Surgery, and Advanced Fetal Ultrasound Imaging in Chennai.
           </p>
-        </div>
-
-        <!-- Gold Accreditation Pill (Inspired by ISO badge in reference) -->
-        <div class="self-start inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-amber-500/40 dark:border-amber-400/40 bg-amber-500/10 dark:bg-amber-400/5 text-amber-900 dark:text-amber-300 text-xs font-semibold shadow-xs">
-          <i class="fa-solid fa-award text-amber-600 dark:text-amber-400 text-sm"></i>
-          <span>NABH &amp; ICMR Aligned Standards • ART Act 2021 Compliant</span>
-        </div>
-      </div>
-
-      <!-- Right 3 Columns (lg:col-span-7) -->
-      <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8">
-        
-        <!-- Column 1: Direct Inquiries -->
-        <div class="space-y-3">
-          <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">
-            <i class="fa-solid fa-phone text-xs"></i>
-            <span>Direct Inquiries</span>
-          </div>
-          <div class="space-y-2 text-xs font-medium text-slate-700 dark:text-slate-300">
-            <a href="tel:+919342521779" class="block hover:text-amber-600 dark:hover:text-amber-300 transition-colors">+91 93425 21779</a>
-            <a href="tel:+919342521907" class="block hover:text-amber-600 dark:hover:text-amber-300 transition-colors">+91 93425 21907</a>
-            <a href="tel:04424864600" class="block hover:text-amber-600 dark:hover:text-amber-300 transition-colors">044 2486 4600</a>
-          </div>
-        </div>
-
-        <!-- Column 2: Email Correspondence -->
-        <div class="space-y-3">
-          <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">
-            <i class="fa-regular fa-envelope text-xs"></i>
-            <span>Email Inquiries</span>
-          </div>
-          <div class="space-y-2 text-xs font-medium text-slate-700 dark:text-slate-300 break-all">
-            <a href="mailto:care@ascasfertility.com" class="block hover:text-amber-600 dark:hover:text-amber-300 transition-colors">care@ascasfertility.com</a>
-            <a href="mailto:appointments@ascasfertility.com" class="block hover:text-amber-600 dark:hover:text-amber-300 transition-colors">appointments@ascasfertility.com</a>
-            <a href="mailto:director@ascasfertility.com" class="block hover:text-amber-600 dark:hover:text-amber-300 transition-colors">director@ascasfertility.com</a>
-          </div>
-        </div>
-
-        <!-- Column 3: Headquarters & Hubs -->
-        <div class="space-y-3">
-          <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">
-            <i class="fa-solid fa-location-dot text-xs"></i>
-            <span>Headquarters</span>
-          </div>
-          <div class="space-y-3 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
-            <div>
-              <span class="font-bold text-slate-900 dark:text-white block">Valasaravakkam Flagship:</span>
-              <span>#24, Chowdhary Nagar Main Rd, Arcot Rd, Chennai 600087</span>
+<div class="flex items-center gap-3 pt-2">
+<a class="w-8 h-8 rounded-full bg-white/10 hover:bg-rose-600 flex items-center justify-center text-xs transition text-white" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a class="w-8 h-8 rounded-full bg-white/10 hover:bg-rose-600 flex items-center justify-center text-xs transition text-white" href="#"><i class="fa-brands fa-instagram"></i></a>
+<a class="w-8 h-8 rounded-full bg-white/10 hover:bg-rose-600 flex items-center justify-center text-xs transition text-white" href="#"><i class="fa-brands fa-youtube"></i></a>
+<a class="w-8 h-8 rounded-full bg-white/10 hover:bg-rose-600 flex items-center justify-center text-xs transition text-white" href="https://wa.me/919940127500"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</div>
+<!-- Col 2: Clinical Specialties Links -->
+<div class="md:col-span-3 space-y-3">
+<h4 class="text-xs uppercase font-bold tracking-widest text-amber-400">Clinical Focus</h4>
+<ul class="text-xs text-slate-300 space-y-2">
+<li><a class="hover:text-white transition" href="#treatments">IVF &amp; ICSI Infertility Treatment</a></li>
+<li><a class="hover:text-white transition" href="#treatments">Intrauterine Insemination (IUI)</a></li>
+<li><a class="hover:text-white transition" href="#treatments">Targeted 3D/4D Anomaly Scans</a></li>
+<li><a class="hover:text-white transition" href="#treatments">Oocyte Vitrification &amp; Preservation</a></li>
+<li><a class="hover:text-white transition" href="#treatments">Laparoscopic Myomectomy &amp; Cystectomy</a></li>
+<li><a class="hover:text-white transition" href="#treatments">Recurrent Implantation Failure Workup</a></li>
+</ul>
+</div>
+<!-- Col 3: Chennai Hubs -->
+<div class="md:col-span-3 space-y-3">
+<h4 class="text-xs uppercase font-bold tracking-widest text-amber-400">Chennai Centers</h4>
+<div class="text-xs text-slate-300 space-y-3">
+<div>
+<div class="font-bold text-white">Valasaravakkam Hub</div>
+<div>Arcot Road (Kesavardhini Junction), Chennai 600087</div>
+</div>
+<div>
+<div class="font-bold text-white">Vadapalani IVF Suite</div>
+<div>Near Vadapalani Metro Station, Chennai 600026</div>
+</div>
+<div class="pt-1 text-amber-300 font-semibold">
+              Emergency Embryology / Direct Desk: +91 99401 27500
             </div>
-            <div>
-              <span class="font-bold text-slate-900 dark:text-white block">Vadapalani Hub:</span>
-              <span>#14, Arunachalam Rd, Saligramam (Near Metro), Chennai 600093</span>
-            </div>
-          </div>
+</div>
+</div>
+<!-- Col 4: Quality & Compliance -->
+<div class="md:col-span-2 space-y-3">
+<h4 class="text-xs uppercase font-bold tracking-widest text-amber-400">Accreditation</h4>
+<div class="space-y-2 text-xs text-slate-300">
+<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rose-400"></i> ART Act 2021 Compliant</div>
+<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rose-400"></i> PCPNDT Registered</div>
+<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rose-400"></i> Class-10,000 ISO Certified</div>
+</div>
+</div>
+</div>
+<!-- Bottom Disclaimer & Copyright Strip -->
+<div class="mt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+<div>
+          © <span id="current-year">2025</span> ASCAS Fertility &amp; Women's Center (Accumed Speciality Clinic &amp; Scans). All medical information is reviewed by registered medical practitioners.
         </div>
-
-      </div>
-    </div>
-
-    <!-- Middle Network Strip (Inspired by Pan-India Project Network in reference) -->
-    <div class="py-8 border-b border-slate-200 dark:border-white/10 space-y-3">
-      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">
-        <i class="fa-solid fa-globe text-xs"></i>
-        <span>Clinical Network &amp; Specialized Protocols</span>
-      </div>
-      <div class="flex flex-wrap gap-2 text-xs">
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Valasaravakkam Flagship</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Vadapalani Metro Hub</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Saligramam</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Arcot Road Corridor</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">IVF &amp; ICSI Protocols</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Class-10,000 IUI Cleanroom</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Voluson™ E10 4D Ultrasound</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Oocyte Vitrification</span>
-        <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 text-slate-700 dark:text-slate-300 font-medium">Laparoscopic TAC &amp; Myomectomy</span>
-      </div>
-    </div>
-
-    <!-- Bottom Strip: Copyright, Theme Toggle & Social Media -->
-    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
-      
-      <!-- Copyright Note -->
-      <div class="text-slate-500 dark:text-slate-500 text-center md:text-left">
-        © <span id="current-year">2026</span> ASCAS Fertility &amp; Women's Center (Accumed Speciality Clinic &amp; Scans). All Rights Reserved.
-      </div>
-
-      <!-- Center Theme Switcher (Light / Dark Mode Toggle) -->
-      <div class="flex items-center gap-2">
-        <span class="text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Theme:</span>
-        <div class="inline-flex items-center p-1 rounded-full bg-slate-200/90 dark:bg-white/10 border border-slate-300/80 dark:border-white/15 shadow-inner">
-          <button id="themeLightBtn" type="button" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold transition-all duration-200" title="Switch to Light Mode">
-            <i class="fa-solid fa-sun text-amber-500"></i>
-            <span>Light</span>
-          </button>
-          <button id="themeDarkBtn" type="button" class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold transition-all duration-200" title="Switch to Dark Mode">
-            <i class="fa-solid fa-moon text-indigo-400"></i>
-            <span>Dark</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Social Media Icons (Right) -->
-      <div class="flex items-center gap-2.5">
-        <a aria-label="Instagram" class="w-9 h-9 rounded-full bg-slate-200/80 dark:bg-white/5 border border-slate-300 dark:border-white/10 hover:border-amber-500 dark:hover:border-amber-400 text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 flex items-center justify-center transition-all hover:scale-105" href="#">
-          <i class="fa-brands fa-instagram text-sm"></i>
-        </a>
-        <a aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-slate-200/80 dark:bg-white/5 border border-slate-300 dark:border-white/10 hover:border-amber-500 dark:hover:border-amber-400 text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 flex items-center justify-center transition-all hover:scale-105" href="#">
-          <i class="fa-brands fa-linkedin-in text-sm"></i>
-        </a>
-        <a aria-label="Facebook" class="w-9 h-9 rounded-full bg-slate-200/80 dark:bg-white/5 border border-slate-300 dark:border-white/10 hover:border-amber-500 dark:hover:border-amber-400 text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 flex items-center justify-center transition-all hover:scale-105" href="#">
-          <i class="fa-brands fa-facebook-f text-sm"></i>
-        </a>
-        <a aria-label="YouTube" class="w-9 h-9 rounded-full bg-slate-200/80 dark:bg-white/5 border border-slate-300 dark:border-white/10 hover:border-amber-500 dark:hover:border-amber-400 text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 flex items-center justify-center transition-all hover:scale-105" href="#">
-          <i class="fa-brands fa-youtube text-sm"></i>
-        </a>
-        <a aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-slate-200/80 dark:bg-white/5 border border-slate-300 dark:border-white/10 hover:border-emerald-500 text-slate-700 dark:text-slate-300 hover:text-emerald-500 flex items-center justify-center transition-all hover:scale-105" href="https://wa.me/919342521779" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-whatsapp text-sm"></i>
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Right Floating Scroll Progress Indicator (Inspired by yellow 100% bar in reference) -->
-  <div id="scrollIndicatorWrap" class="hidden xl:flex fixed right-4 bottom-10 z-40 flex-col items-center gap-1.5 pointer-events-auto cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top">
-    <div class="w-1.5 h-16 bg-slate-300 dark:bg-white/15 rounded-full overflow-hidden relative shadow-sm">
-      <div id="scrollProgressBar" class="w-full bg-amber-500 dark:bg-amber-400 absolute top-0 left-0 transition-all duration-150" style="height: 0%;"></div>
-    </div>
-    <span id="scrollProgressText" class="text-[10px] font-mono font-bold text-slate-600 dark:text-amber-300 select-none">0%</span>
-  </div>
+<div class="flex items-center gap-4">
+<a class="hover:text-white transition" href="#">Privacy Policy</a>
+<span>•</span>
+<a class="hover:text-white transition" href="#">Ethical Treatment Standards</a>
+<span>•</span>
+<a class="hover:text-white transition" href="#">Patient Rights</a>
+</div>
+</div>
+</div>
 </footer>
 <!-- END: MainFooter -->
-
-<!-- JavaScript for Interactive Date Default, Mobile Drawer, Theme Switcher, and Smooth Scroll -->
+<!-- JavaScript for Interactive Date Default and Dynamic Year -->
 <script data-purpose="ux-enhancements">
     document.addEventListener('DOMContentLoaded', () => {
       // Set Copyright Year
@@ -1200,76 +1207,6 @@
       if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
       }
-
-      // Mobile Menu Drawer Toggle
-      const navToggleBtn = document.getElementById('navToggleBtn');
-      const mobileDrawer = document.getElementById('mobileDrawer');
-      const navToggleIcon = document.getElementById('navToggleIcon');
-
-      if (navToggleBtn && mobileDrawer && navToggleIcon) {
-        navToggleBtn.addEventListener('click', () => {
-          const isHidden = mobileDrawer.classList.contains('hidden');
-          if (isHidden) {
-            mobileDrawer.classList.remove('hidden');
-            navToggleIcon.classList.remove('fa-bars');
-            navToggleIcon.classList.add('fa-xmark');
-          } else {
-            mobileDrawer.classList.add('hidden');
-            navToggleIcon.classList.remove('fa-xmark');
-            navToggleIcon.classList.add('fa-bars');
-          }
-        });
-
-        // Close drawer when any mobile nav link is clicked
-        document.querySelectorAll('.mobile-nav-link').forEach(link => {
-          link.addEventListener('click', () => {
-            mobileDrawer.classList.add('hidden');
-            navToggleIcon.classList.remove('fa-xmark');
-            navToggleIcon.classList.add('fa-bars');
-          });
-        });
-      }
-
-      // Theme Switcher Logic (Light & Dark Mode)
-      const themeLightBtn = document.getElementById('themeLightBtn');
-      const themeDarkBtn = document.getElementById('themeDarkBtn');
-
-      function updateTheme(isDark) {
-        if (isDark) {
-          document.documentElement.classList.add('dark');
-          themeDarkBtn?.classList.add('bg-amber-400', 'text-slate-950', 'shadow-xs');
-          themeDarkBtn?.classList.remove('text-slate-500', 'dark:text-slate-400');
-          themeLightBtn?.classList.remove('bg-white', 'text-slate-900', 'shadow-xs');
-          themeLightBtn?.classList.add('text-slate-500', 'dark:text-slate-400');
-          localStorage.setItem('theme', 'dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-          themeLightBtn?.classList.add('bg-white', 'text-slate-900', 'shadow-xs');
-          themeLightBtn?.classList.remove('text-slate-500', 'dark:text-slate-400');
-          themeDarkBtn?.classList.remove('bg-amber-400', 'text-slate-950', 'shadow-xs');
-          themeDarkBtn?.classList.add('text-slate-500', 'dark:text-slate-400');
-          localStorage.setItem('theme', 'light');
-        }
-      }
-
-      // Default to Dark Mode as displayed in reference screenshot
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDark = savedTheme ? savedTheme === 'dark' : true;
-      updateTheme(prefersDark);
-
-      themeLightBtn?.addEventListener('click', () => updateTheme(false));
-      themeDarkBtn?.addEventListener('click', () => updateTheme(true));
-
-      // Scroll Progress Bar
-      const progressBar = document.getElementById('scrollProgressBar');
-      const progressText = document.getElementById('scrollProgressText');
-      window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        const pct = maxScroll > 0 ? Math.min(100, Math.max(0, Math.round((scrollTop / maxScroll) * 100))) : 0;
-        if (progressBar) progressBar.style.height = `${pct}%`;
-        if (progressText) progressText.textContent = `${pct}%`;
-      });
 
       // Smooth scroll adjustment for fixed header
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
