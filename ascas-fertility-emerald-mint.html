@@ -74,6 +74,24 @@
   </script>
 <!-- Custom CSS for Watermarks & Glassmorphic Effects -->
 <style data-purpose="custom-effects">
+    .nl-wrap,
+    [class*="nl-wrap"] {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      height: 0 !important;
+      width: 0 !important;
+      max-height: 0 !important;
+      max-width: 0 !important;
+      overflow: hidden !important;
+      pointer-events: none !important;
+      position: absolute !important;
+      z-index: -99999 !important;
+      clip: rect(0, 0, 0, 0) !important;
+      clip-path: inset(50%) !important;
+    }
+
+
     .text-watermark {
       user-select: none;
       pointer-events: none;
